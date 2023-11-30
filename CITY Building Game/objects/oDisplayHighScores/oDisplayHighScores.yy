@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sStartNewGame",
-    "path": "sprites/sStartNewGame/sStartNewGame.yy",
+    "name": "sDisplayHighScores",
+    "path": "sprites/sDisplayHighScores/sDisplayHighScores.yy",
   },
   "spriteMaskId": null,
   "visible": true,

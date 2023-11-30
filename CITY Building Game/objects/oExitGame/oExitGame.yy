@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sStartNewGame",
-    "path": "sprites/sStartNewGame/sStartNewGame.yy",
+    "name": "sExitGame",
+    "path": "sprites/sExitGame/sExitGame.yy",
   },
   "spriteMaskId": null,
   "visible": true,
