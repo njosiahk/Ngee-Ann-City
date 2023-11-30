@@ -15,8 +15,10 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"Main Menu","order":2,"path":"folders/Objects/Main Menu.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"Sprite1","order":1,"path":"sprites/Sprite1/Sprite1.yy",},
+    {"name":"Intro_0_MainMenu","order":1,"path":"rooms/Intro_0_MainMenu/Intro_0_MainMenu.yy",},
   ],
 }
