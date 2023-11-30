@@ -47,7 +47,7 @@
     {"id":{"name":"sLoadSavedGame","path":"sprites/sLoadSavedGame/sLoadSavedGame.yy",},},
     {"id":{"name":"scrSaving","path":"scripts/scrSaving/scrSaving.yy",},},
     {"id":{"name":"sPauseButton","path":"sprites/sPauseButton/sPauseButton.yy",},},
-    {"id":{"name":"oStart","path":"objects/oStart/oStart.yy",},},
+    {"id":{"name":"oStartNewGame","path":"objects/oStartNewGame/oStartNewGame.yy",},},
     {"id":{"name":"Intro_0_MainMenu","path":"rooms/Intro_0_MainMenu/Intro_0_MainMenu.yy",},},
     {"id":{"name":"sResumeGame","path":"sprites/sResumeGame/sResumeGame.yy",},},
     {"id":{"name":"sStartNewGame","path":"sprites/sStartNewGame/sStartNewGame.yy",},},
