@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sStartNewGame",
-    "path": "sprites/sStartNewGame/sStartNewGame.yy",
+    "name": "sResumeGame",
+    "path": "sprites/sResumeGame/sResumeGame.yy",
   },
   "spriteMaskId": null,
   "visible": true,

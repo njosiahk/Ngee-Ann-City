@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sStartNewGame",
-    "path": "sprites/sStartNewGame/sStartNewGame.yy",
+    "name": "sPauseButton",
+    "path": "sprites/sPauseButton/sPauseButton.yy",
   },
   "spriteMaskId": null,
   "visible": true,
