@@ -53,6 +53,7 @@
     {"id":{"name":"scrSaving","path":"scripts/scrSaving/scrSaving.yy",},},
     {"id":{"name":"sPauseButton","path":"sprites/sPauseButton/sPauseButton.yy",},},
     {"id":{"name":"oDisplayHighScores","path":"objects/oDisplayHighScores/oDisplayHighScores.yy",},},
+    {"id":{"name":"Room2_pausemenu","path":"rooms/Room2_pausemenu/Room2_pausemenu.yy",},},
     {"id":{"name":"oStartNewGame","path":"objects/oStartNewGame/oStartNewGame.yy",},},
     {"id":{"name":"Intro_0_MainMenu","path":"rooms/Intro_0_MainMenu/Intro_0_MainMenu.yy",},},
     {"id":{"name":"sResumeGame","path":"sprites/sResumeGame/sResumeGame.yy",},},
@@ -65,6 +66,7 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"Intro_0_MainMenu","path":"rooms/Intro_0_MainMenu/Intro_0_MainMenu.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Room2_pausemenu","path":"rooms/Room2_pausemenu/Room2_pausemenu.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
