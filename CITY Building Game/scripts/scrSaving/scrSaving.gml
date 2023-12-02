@@ -33,7 +33,7 @@ function load_game()
 	var _file;
 	if (file_exists("CityGame.txt")&& global.choosing=="CityGame.txt" )
 	{
-		_file = file_text_open_read("CityGame.text");
+		_file = file_text_open_read("CityGame.txt");
 		filethere =true
 	}
 	else if (file_exists("Saved1.txt")&& global.choosing = "Saved1.txt")
