@@ -1,10 +1,11 @@
 {
   "FolderOrderSettings": [
-    {"name":"Animation Curves","order":12,"path":"folders/Animation Curves.yy",},
-    {"name":"Extensions","order":14,"path":"folders/Extensions.yy",},
-    {"name":"Fonts","order":7,"path":"folders/Fonts.yy",},
-    {"name":"Notes","order":13,"path":"folders/Notes.yy",},
-    {"name":"Objects","order":9,"path":"folders/Objects.yy",},
+    {"name":"Animation Curves","order":10,"path":"folders/Animation Curves.yy",},
+    {"name":"Extensions","order":12,"path":"folders/Extensions.yy",},
+    {"name":"Fonts","order":5,"path":"folders/Fonts.yy",},
+    {"name":"Notes","order":11,"path":"folders/Notes.yy",},
+    {"name":"Objects","order":7,"path":"folders/Objects.yy",},
+    {"name":"Grid","order":5,"path":"folders/Objects/Grid.yy",},
     {"name":"Main Menu","order":2,"path":"folders/Objects/Main Menu.yy",},
     {"name":"Pause Menu","order":3,"path":"folders/Objects/Pause Menu.yy",},
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
@@ -24,6 +25,7 @@
   "ResourceOrderSettings": [
     {"name":"oExitGame","order":2,"path":"objects/oExitGame/oExitGame.yy",},
     {"name":"oLoadSavedGame","order":3,"path":"objects/oLoadSavedGame/oLoadSavedGame.yy",},
+    {"name":"test_spawn","order":3,"path":"rooms/test_spawn/test_spawn.yy",},
     {"name":"oResumeGame","order":1,"path":"objects/oResumeGame/oResumeGame.yy",},
     {"name":"sExitGame","order":1,"path":"sprites/sExitGame/sExitGame.yy",},
     {"name":"sSaveGame","order":2,"path":"sprites/sSaveGame/sSaveGame.yy",},
@@ -33,6 +35,8 @@
     {"name":"sLoadSavedGame","order":2,"path":"sprites/sLoadSavedGame/sLoadSavedGame.yy",},
     {"name":"oDisplayHighScores","order":1,"path":"objects/oDisplayHighScores/oDisplayHighScores.yy",},
     {"name":"Room2_pausemenu","order":2,"path":"rooms/Room2_pausemenu/Room2_pausemenu.yy",},
+    {"name":"obj_cell","order":1,"path":"objects/obj_cell/obj_cell.yy",},
+    {"name":"spr_cell","order":4,"path":"sprites/spr_cell/spr_cell.yy",},
     {"name":"Intro_0_MainMenu","order":1,"path":"rooms/Intro_0_MainMenu/Intro_0_MainMenu.yy",},
     {"name":"sResumeGame","order":1,"path":"sprites/sResumeGame/sResumeGame.yy",},
     {"name":"oTitle","order":4,"path":"objects/oTitle/oTitle.yy",},
