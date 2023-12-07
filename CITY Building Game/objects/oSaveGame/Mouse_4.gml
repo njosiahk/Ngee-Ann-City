@@ -4,7 +4,7 @@
 global.hunger=random_range(1,1000)
 save_game()
 
-instance_destroy()
+
 
 
 
