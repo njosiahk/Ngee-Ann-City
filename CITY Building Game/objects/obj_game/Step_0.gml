@@ -12,7 +12,7 @@ for (var i = 0; i < grid_width; i++) {
 		//more code for cell if needed
 	}
 }
-setup=false
+setup = false
 }
 
 

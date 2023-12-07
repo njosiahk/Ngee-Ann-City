@@ -34,7 +34,6 @@
     {"name":"sTitle","order":4,"path":"sprites/sTitle/sTitle.yy",},
     {"name":"oSaveGame","order":2,"path":"objects/oSaveGame/oSaveGame.yy",},
     {"name":"Sprite1","order":1,"path":"sprites/Sprite1/Sprite1.yy",},
-    {"name":"testingdata","order":1,"path":"objects/testingdata/testingdata.yy",},
     {"name":"sRoadVertical","order":5,"path":"sprites/sRoadVertical/sRoadVertical.yy",},
     {"name":"sLoadSavedGame","order":2,"path":"sprites/sLoadSavedGame/sLoadSavedGame.yy",},
     {"name":"sRoadCorner","order":4,"path":"sprites/sRoadCorner/sRoadCorner.yy",},

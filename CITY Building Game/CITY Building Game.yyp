@@ -43,7 +43,6 @@
   "resources": [
     {"id":{"name":"oExitGame","path":"objects/oExitGame/oExitGame.yy",},},
     {"id":{"name":"obj_building","path":"objects/obj_building/obj_building.yy",},},
-    {"id":{"name":"obj_save","path":"objects/obj_save/obj_save.yy",},},
     {"id":{"name":"oLoadSavedGame","path":"objects/oLoadSavedGame/oLoadSavedGame.yy",},},
     {"id":{"name":"test_spawn","path":"rooms/test_spawn/test_spawn.yy",},},
     {"id":{"name":"oResumeGame","path":"objects/oResumeGame/oResumeGame.yy",},},
@@ -53,7 +52,6 @@
     {"id":{"name":"sTitle","path":"sprites/sTitle/sTitle.yy",},},
     {"id":{"name":"oSaveGame","path":"objects/oSaveGame/oSaveGame.yy",},},
     {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},},
-    {"id":{"name":"testingdata","path":"objects/testingdata/testingdata.yy",},},
     {"id":{"name":"obj_game","path":"objects/obj_game/obj_game.yy",},},
     {"id":{"name":"sRoadVertical","path":"sprites/sRoadVertical/sRoadVertical.yy",},},
     {"id":{"name":"sDisplayHighScores","path":"sprites/sDisplayHighScores/sDisplayHighScores.yy",},},
