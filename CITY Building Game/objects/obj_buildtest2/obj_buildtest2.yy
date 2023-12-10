@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_building2",
+  "name": "obj_buildtest2",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
@@ -12,8 +12,8 @@
     "path": "folders/Objects/Grid.yy",
   },
   "parentObjectId": {
-    "name": "obj_building",
-    "path": "objects/obj_building/obj_building.yy",
+    "name": "obj_buildtest",
+    "path": "objects/obj_buildtest/obj_buildtest.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
