@@ -1,27 +1,30 @@
 
 if position_meeting(mouse_x, mouse_y, id){ //check if mouse is on tile
+	image_index = 1; //highlight hovered
 	if (mouse_check_button_pressed(mb_left)) { //select if clicked
 		chooseBuild = true;
-		image_index = 1; //highlight selected
+		selected = true; //highlight selected
+	}
+	if selected {
+		image_index = 2;	
 	}
 }
-else { //else disable bool
+else { //else mouse no longer on, disable bool
 	chooseBuild = false;
+	selected = false;
 	image_index = 0;
 }
 
-if (chooseBuild = true) { //if is chosen
+if chooseBuild { //if is chosen
 	if (keyboard_check_pressed(ord("1"))) { //press 1 to choose building 1
-		instance_create_layer(x, y, "Instances", obj_building); //creates building 1
+		instance_create_layer(x, y, "Instances", obj_buildtest); //creates building 1
 		deactivate = true; //destroy cell later
 	}
 	else if (keyboard_check_pressed(ord("2"))) {
-		instance_create_layer(x, y, "Instances", obj_building2);
+		instance_create_layer(x, y, "Instances", obj_buildtest2);
 		deactivate = true;
 	}
 }
-
-
 
 
 
