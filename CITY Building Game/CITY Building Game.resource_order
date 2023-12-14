@@ -11,6 +11,7 @@
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
     {"name":"Paths","order":4,"path":"folders/Paths.yy",},
     {"name":"Rooms","order":10,"path":"folders/Rooms.yy",},
+    {"name":"Real Map","order":4,"path":"folders/Rooms/Real Map.yy",},
     {"name":"Scripts","order":5,"path":"folders/Scripts.yy",},
     {"name":"Sequences","order":11,"path":"folders/Sequences.yy",},
     {"name":"Shaders","order":6,"path":"folders/Shaders.yy",},
@@ -56,6 +57,7 @@
     {"name":"obj_building2","order":3,"path":"objects/obj_building2/obj_building2.yy",},
     {"name":"sStartNewGame","order":3,"path":"sprites/sStartNewGame/sStartNewGame.yy",},
     {"name":"sRoadHorizontal","order":6,"path":"sprites/sRoadHorizontal/sRoadHorizontal.yy",},
+    {"name":"GameRoom1","order":1,"path":"rooms/GameRoom1/GameRoom1.yy",},
     {"name":"sCommercial","order":1,"path":"sprites/sCommercial/sCommercial.yy",},
   ],
 }

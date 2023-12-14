@@ -6,7 +6,8 @@ var _button =
 	"Start New Game",
 	"Display High Scores",
 	"Load Game",
-	"Exit Game"
+	"Exit Game",
+	"helo"
 ];
 return _button
 
