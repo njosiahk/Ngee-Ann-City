@@ -17,7 +17,7 @@ else { //else mouse no longer on, disable bool
 
 if chooseBuild { //if is chosen
 	if (keyboard_check_pressed(ord("1"))) { //press 1 to choose building 1
-		instance_create_layer(x, y, "Instances", obj_buildtest); //creates building 1
+		instance_create_layer(x, y, "Instances", obj_road); //creates building 1
 		deactivate = true; //destroy cell later
 	}
 	else if (keyboard_check_pressed(ord("2"))) {

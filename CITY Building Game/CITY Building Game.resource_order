@@ -47,6 +47,8 @@
     {"name":"spr_ind","order":2,"path":"sprites/spr_ind/spr_ind.yy",},
     {"name":"spr_building2","order":6,"path":"sprites/spr_building2/spr_building2.yy",},
     {"name":"oDisplayHighScores","order":1,"path":"objects/oDisplayHighScores/oDisplayHighScores.yy",},
+    {"name":"spr_road_connect","order":8,"path":"sprites/spr_road_connect/spr_road_connect.yy",},
+    {"name":"spr_road","order":7,"path":"sprites/spr_road/spr_road.yy",},
     {"name":"Room2_pausemenu","order":2,"path":"rooms/Room2_pausemenu/Room2_pausemenu.yy",},
     {"name":"obj_cell","order":3,"path":"objects/obj_cell/obj_cell.yy",},
     {"name":"spr_cell","order":4,"path":"sprites/spr_cell/spr_cell.yy",},
