@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scrSaving",
+  "name": "menuscripts",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

@@ -19,15 +19,15 @@ break;
 case main[3]:
 game_end()
 break;
-case main[4]:
-game_end()
-break;
+
 case pause[0]:
-save_game()
-room_goto(Intro_0_MainMenu)
+//resume game
+instance_destroy(ObjectPause)
+
 break;
 case pause[1]:
-//resume game
+save_game()
+room_goto(Intro_0_MainMenu)
 
 break;
 case pause[2]:

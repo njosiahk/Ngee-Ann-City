@@ -8,7 +8,7 @@ while (setup)
 {
 for (var i = 0; i < grid_width; i++) {
 	for (var j = 0; j < grid_height; j++) {
-		var _instance = instance_create_depth(_start_x + (i * cell_size), _start_y + (j * cell_size), 0, obj_cell);
+		var _instance = instance_create_layer(_start_x + (i * cell_size), _start_y + (j * cell_size),"Game_layer", obj_cell);
 		//more code for cell if needed
 	}
 }

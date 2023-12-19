@@ -1,20 +1,18 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oStartNewGame",
+  "name": "ObjectPause",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Pause Menu",
-    "path": "folders/Objects/Pause Menu.yy",
+    "name": "Main Menu",
+    "path": "folders/Objects/Main Menu.yy",
   },
-  "parentObjectId": {
-    "name": "ObjectButtonP",
-    "path": "objects/ObjectButtonP/ObjectButtonP.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -30,10 +28,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "sStartNewGame",
-    "path": "sprites/sStartNewGame/sStartNewGame.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

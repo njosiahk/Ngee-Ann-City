@@ -6,8 +6,7 @@ var _button =
 	"Start New Game",
 	"Display High Scores",
 	"Load Game",
-	"Exit Game",
-	"helo"
+	"Exit Game"
 ];
 return _button
 
@@ -17,8 +16,8 @@ function Pausemenu(){
 
 var _button = 
 [
-	"Save game",
 	"Resume Game",
+	"Save game",
 	"Load Game",
 	"Exit Game"
 ];

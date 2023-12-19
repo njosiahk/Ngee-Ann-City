@@ -56,3 +56,4 @@ function load_game()
 	}
 	
 }
+
