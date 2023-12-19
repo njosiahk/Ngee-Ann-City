@@ -1,4 +1,4 @@
-draw_self();
+event_inherited()
 
 if position_meeting(x+obj_game.cell_size+1, y+1, obj_road) { //checks right
 	

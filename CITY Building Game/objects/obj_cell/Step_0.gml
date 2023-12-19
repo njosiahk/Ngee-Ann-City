@@ -15,17 +15,29 @@ else { //else mouse no longer on, disable bool
 	image_index = 0;
 }
 
+if global.gold > 0{
 if chooseBuild { //if is chosen
 	if (keyboard_check_pressed(ord("1"))) { //press 1 to choose building 1
 		instance_create_layer(x, y, "Game_layer", obj_road); //creates building 1
 		deactivate = true; //destroy cell later
 	}
 	else if (keyboard_check_pressed(ord("2"))) {
-		instance_create_layer(x, y, "Game_layer", obj_buildtest2);
+		instance_create_layer(x, y, "Game_layer", obj_ind);
 		deactivate = true;
 	}
+	else if (keyboard_check_pressed(ord("3"))) {
+		instance_create_layer(x, y, "Game_layer", obj_park);
+		deactivate = true;
+	}
+	else if (keyboard_check_pressed(ord("4"))) {
+	instance_create_layer(x, y, "Game_layer", obj_comm);
+	deactivate = true;
+	}
 }
-
+}
+else {
+//print not inaff gold
+}
 
 
 

@@ -1,4 +1,7 @@
 // Set the building type for the Commercial object
+/*
+
+
 var object_type = obj_comm; // the actual name of your Commercial object
 
 // Check if it is the start of the turn
@@ -51,8 +54,8 @@ if obj_game.turn_start {
     }
 }
 
-
-
+*/
+event_inherited()
 
 
 

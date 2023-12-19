@@ -3,8 +3,14 @@
 
 draw_self()
 draw_set_color(c_white)
-text = select+item
+text =item
 if (item != ""){
-draw_text(x,y,text)
+	if (select != "" )
+	{
+		draw_text(x,y,select)
+		x+=string_width(select)
+	}
+draw_text_ext(x,y,text,nextlinesp,linewidth)
+x-=string_width(select)
 
 }

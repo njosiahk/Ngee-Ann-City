@@ -6,5 +6,8 @@ image_index = 0;
 item = ""
 select = ""
 
+nextlinesp = 25
+linewidth = sprite_get_width(Blank)
+
 
 
