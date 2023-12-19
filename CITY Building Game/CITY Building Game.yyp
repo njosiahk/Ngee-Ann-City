@@ -69,6 +69,8 @@
     {"id":{"name":"sPauseButton","path":"sprites/sPauseButton/sPauseButton.yy",},},
     {"id":{"name":"spr_building2","path":"sprites/spr_building2/spr_building2.yy",},},
     {"id":{"name":"oDisplayHighScores","path":"objects/oDisplayHighScores/oDisplayHighScores.yy",},},
+    {"id":{"name":"spr_road_connect","path":"sprites/spr_road_connect/spr_road_connect.yy",},},
+    {"id":{"name":"spr_road","path":"sprites/spr_road/spr_road.yy",},},
     {"id":{"name":"Room2_pausemenu","path":"rooms/Room2_pausemenu/Room2_pausemenu.yy",},},
     {"id":{"name":"obj_cell","path":"objects/obj_cell/obj_cell.yy",},},
     {"id":{"name":"spr_cell","path":"sprites/spr_cell/spr_cell.yy",},},
