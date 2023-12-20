@@ -2,7 +2,7 @@
 
 
 //change the room name correctly
-switch (item)
+switch (choice)
 {
 case main[0]:
 //start new game
@@ -48,27 +48,19 @@ break;
 case pause[3]:
 game_end()
 break;
-////////// need to make a loop so the case is == to how many files
-case save[0]:
-//load game in the file using load_game()
+
+case num:
+//
 break;
 
-case save[1]:
-//load game in the file
-break;
 
-case save[2]:
-//load game in the file
-break;
-/*case save[3]:
-//load game in the file
-break;*/
 //back button in saveroom
 case othername[0]: // check how many items in the script
 //go back to mainmenu
 room_goto(Room1)
 break;
 case othername[1]:
+// empty save load
 //need to differentiate what to do of load and save
 break;
 }

@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-startY =(camera_get_view_height(view_camera[0]) -sheight*array_length(buttonname))/2;
+startY =((camera_get_view_height(view_camera[0]) -sheight*array_length(buttonname))/2)
 
 
 if keyboard_check_pressed(vk_escape) && menutype == "pause" //check for object that ddeactivates all objects
@@ -50,8 +50,10 @@ for (var i =0;i<numberloops;++i)
 	}
 	obj.pause=Pausemenu()
 	obj.main = Mainmenu()
+	//show_message(array_length(arry))
 	obj.save= searchfiles()
 	obj.othername=otherbuttons()
+	obj.num = i
 
 }
 	if (menutype == "saved")
@@ -65,6 +67,7 @@ for (var i =0;i<numberloops;++i)
 		obj.main = Mainmenu()
 		obj.save= searchfiles()
 		obj.othername=otherbuttons()
+		obj.num = i
 	}
 	if (menutype=="pause")
 	{

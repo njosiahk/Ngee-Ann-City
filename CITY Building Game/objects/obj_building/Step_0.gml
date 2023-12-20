@@ -43,7 +43,7 @@ if turncreated != global.turn
 	{	
 		//show_message(object_get_name(self.object_index))// return obj_ind
 	
-	
+
 	var buildinglist = [obj_res] // what to look out for
 	scoreadd = 1 // because each industry produces 1 gold
 	

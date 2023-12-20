@@ -6,6 +6,7 @@
     {"name":"Notes","order":11,"path":"folders/Notes.yy",},
     {"name":"Objects","order":7,"path":"folders/Objects.yy",},
     {"name":"Buildings","order":6,"path":"folders/Objects/Buildings.yy",},
+    {"name":"Game Control","order":8,"path":"folders/Objects/Game Control.yy",},
     {"name":"Grid","order":5,"path":"folders/Objects/Grid.yy",},
     {"name":"Main Menu","order":2,"path":"folders/Objects/Main Menu.yy",},
     {"name":"unused coded","order":3,"path":"folders/Objects/unused coded.yy",},
@@ -25,7 +26,6 @@
     {"name":"Pause Menu","order":3,"path":"folders/Sprites/Pause Menu.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"Game Control","order":8,"path":"folders/Objects/Game Control.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_exitbutton","order":5,"path":"objects/obj_exitbutton/obj_exitbutton.yy",},
