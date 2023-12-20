@@ -2,10 +2,10 @@
 // You can write your code in this editor
 
 
-logoheight = sprite_get_height(sTitle)
-logowidth = sprite_get_width(sTitle)
-swidth = sprite_get_width(Blank)
-sheight = sprite_get_height(Blank)
+logoheight = sprite_get_height(spr_title)
+logowidth = sprite_get_width(spr_title)
+swidth = sprite_get_width(spr_button)
+sheight = sprite_get_height(spr_button)
 
 linespace = 20
 layername = "Pause_layer"
@@ -33,7 +33,7 @@ draw =true
 
 
 logoXstart=(camera_get_view_width(view_camera[0]) - logowidth )/ 2;
-startX = (camera_get_view_width(view_camera[0]) - swidth )/ 2;
+
 // to be changed for the scroll code
 
 // height of camera minus the height 

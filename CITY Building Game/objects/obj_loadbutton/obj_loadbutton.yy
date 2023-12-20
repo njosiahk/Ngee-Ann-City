@@ -30,10 +30,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "sLoadSavedGame",
-    "path": "sprites/sLoadSavedGame/sLoadSavedGame.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

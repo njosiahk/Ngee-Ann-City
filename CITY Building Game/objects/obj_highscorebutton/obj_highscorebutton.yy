@@ -30,10 +30,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "sDisplayHighScores",
-    "path": "sprites/sDisplayHighScores/sDisplayHighScores.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

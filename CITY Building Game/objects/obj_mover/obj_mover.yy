@@ -28,7 +28,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_mover",
+    "path": "sprites/spr_mover/spr_mover.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }
