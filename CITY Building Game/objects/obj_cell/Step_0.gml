@@ -33,6 +33,10 @@ if chooseBuild { //if is chosen
 	instance_create_layer(x, y, "Game_layer", obj_comm);
 	deactivate = true;
 	}
+	else if (keyboard_check_pressed(ord("5"))) {
+	instance_create_layer(x, y, "Game_layer", obj_res);
+	deactivate = true;
+	}
 }
 }
 else {
