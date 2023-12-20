@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "unused coded",
+    "path": "folders/Objects/unused coded.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

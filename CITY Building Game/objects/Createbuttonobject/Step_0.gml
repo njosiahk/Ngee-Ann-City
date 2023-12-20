@@ -27,16 +27,45 @@ if (draw){
 	}
 
 	//code for background in menu for pause
-for (var i =0;i<array_length(buttonname);++i)
+	var numberloops = array_length(buttonname)
+	if(menutype == "saved")
+	{
+		numberloops = 4// so that there is always 4 slots no matter what
+	}
+for (var i =0;i<numberloops;++i)
 {
 	
 	var obj=instance_create_layer(startX,startY+(i*sheight),layername,ObjectButtonP)
 	startY +=linespace
-	obj.item =buttonname[i]
+	if (i >= array_length(buttonname))// what the name should be when there is no file
+	{
+		//var slotnum = i+1     // need further research for the what it do in objectbutton
+		//obj.item = "save slot "+string(slotnum)
+		obj.item="Free Save Slot"
+	}
+	else
+	{
+		
+		obj.item =buttonname[i]
+	}
 	obj.pause=Pausemenu()
 	obj.main = Mainmenu()
+	obj.save= searchfiles()
+	obj.othername=otherbuttons()
 
 }
+	if (menutype == "saved")
+	{
+		//back button
+		var xvalue=(camera_get_view_width(view_camera[0]) - logowidth )/ 5//x value for button
+		var yvalue = (camera_get_view_height(view_camera[0]) - logowidth )/ 5// y value for button
+		var obj=instance_create_layer(xvalue,yvalue,layername,ObjectButtonP)
+		obj.item ="back to mainmenu" // item added into list in menuscript
+		obj.pause=Pausemenu()
+		obj.main = Mainmenu()
+		obj.save= searchfiles()
+		obj.othername=otherbuttons()
+	}
 	if (menutype=="pause")
 	{
 		instance_deactivate_layer("Pause_layer")

@@ -12,15 +12,20 @@ layername = "Pause_layer"
 //if the room is not startroom and is pausebutton is presses
 roomname = room_get_name(room)
 //placeholder for escape key
-if (roomname != room_get_name(Room1)){
-buttonname=Pausemenu()
-menutype = "pause"
+if (roomname == room_get_name(Room1)){
+buttonname=Mainmenu()
+menutype = "Main"
 
+}
+else if (roomname == room_get_name(fileroom))
+{
+	menutype = "saved"
+	buttonname = searchfiles()// array for saved files
 }
 //else if room is startroom
 else{
-buttonname=Mainmenu()
-menutype = "Main"
+buttonname=Pausemenu()
+menutype = "pause"
 
 }
 draw =true

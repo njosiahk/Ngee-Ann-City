@@ -1,7 +1,7 @@
-/// @description Insert description here
-// You can write your code in this editor
 
-//for now there is 8 items so far starting with main
+
+
+//change the room name correctly
 switch (item)
 {
 case main[0]:
@@ -14,9 +14,15 @@ case main[0]:
 case main[1]:
 //Display High Scores
 
+
+
 break;
-case main[2]:
-load_game()
+case main[2]://load game
+// go to new room
+room_goto(fileroom)
+// array of saved games name
+
+//load_game()
 //go to gameroom
 
 break;
@@ -35,15 +41,36 @@ room_goto(Intro_0_MainMenu)
 
 break;
 case pause[2]:
-load_game()
+room_goto(fileroom)
 //go to gameroom
 
 break;
 case pause[3]:
 game_end()
 break;
+////////// need to make a loop so the case is == to how many files
+case save[0]:
+//load game in the file using load_game()
+break;
 
+case save[1]:
+//load game in the file
+break;
 
+case save[2]:
+//load game in the file
+break;
+/*case save[3]:
+//load game in the file
+break;*/
+//back button in saveroom
+case othername[0]: // check how many items in the script
+//go back to mainmenu
+room_goto(Room1)
+break;
+case othername[1]:
+//need to differentiate what to do of load and save
+break;
 }
 
 
