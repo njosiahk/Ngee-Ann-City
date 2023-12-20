@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-startY =(camera_get_view_height(view_camera[0]) -sheight*array_length(buttonname))/2;
+startX = (camera_get_view_width(view_camera[0]) - swidth )/ 2;
+startY = (camera_get_view_height(view_camera[0]) - sheight*array_length(buttonname))/2;
 
 
 if keyboard_check_pressed(vk_escape) && menutype == "pause" //check for object that ddeactivates all objects

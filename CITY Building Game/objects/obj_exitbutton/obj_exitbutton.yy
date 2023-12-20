@@ -30,10 +30,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "sExitGame",
-    "path": "sprites/sExitGame/sExitGame.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

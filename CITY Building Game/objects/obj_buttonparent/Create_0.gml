@@ -7,7 +7,7 @@ item = ""
 select = ""
 
 nextlinesp = 25
-linewidth = sprite_get_width(Blank)
+linewidth = sprite_get_width(spr_button)
 
 
 
