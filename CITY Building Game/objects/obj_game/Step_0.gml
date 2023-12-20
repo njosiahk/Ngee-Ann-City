@@ -1,6 +1,6 @@
 //Calculate the starting position to center the grid lengthwise
 var _start_x = (room_width - grid_width * cell_size) / 2;
-var _start_y = 0; //can be changed to whatever
+var _start_y = (room_height - grid_height * cell_size) / 2;
 
 //loop to create grid
 while (setup)
