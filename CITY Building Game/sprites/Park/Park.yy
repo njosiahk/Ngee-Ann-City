@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "Park",
-  "bbox_bottom": 53,
+  "bbox_bottom": 127,
   "bbox_left": 0,
-  "bbox_right": 53,
+  "bbox_right": 127,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -26,7 +26,7 @@
   ],
   "gridX": 32,
   "gridY": 32,
-  "height": 54,
+  "height": 128,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ba45cd21-6904-4789-a7b9-f7147dbc01b1","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
@@ -88,5 +88,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 54,
+  "width": 128,
 }

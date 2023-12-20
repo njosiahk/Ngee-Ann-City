@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_road",
-  "bbox_bottom": 53,
+  "bbox_bottom": 127,
   "bbox_left": 0,
-  "bbox_right": 53,
+  "bbox_right": 127,
   "bbox_top": 0,
   "bboxMode": 1,
   "collisionKind": 1,
@@ -15,9 +15,9 @@
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2e6c0144-bf8a-4908-9758-ab7e5197339c",},
   ],
-  "gridX": 27,
-  "gridY": 27,
-  "height": 54,
+  "gridX": 4,
+  "gridY": 4,
+  "height": 128,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"23466e93-cb40-4798-a097-292a12b23c89","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 54,
+  "width": 128,
 }
