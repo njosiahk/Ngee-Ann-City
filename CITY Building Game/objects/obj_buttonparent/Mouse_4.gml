@@ -7,9 +7,10 @@ switch (choice)
 case main[0]:
 //start new game
 	room_goto_next();
-	global.turn=1
-	global.gold=16
-	global.points=0 // to be placed in obj_game
+	global.prev_turn=0;
+	global.turn=1;
+	global.gold=16;
+	global.points=0; // to be placed in obj_game
 	break;
 case main[1]:
 //Display High Scores

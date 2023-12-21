@@ -41,6 +41,7 @@
     {"name":"fileroom","order":5,"path":"rooms/fileroom/fileroom.yy",},
     {"name":"obj_comm","order":7,"path":"objects/obj_comm/obj_comm.yy",},
     {"name":"obj_savebutton","order":2,"path":"objects/obj_savebutton/obj_savebutton.yy",},
+    {"name":"obj_game","order":2,"path":"objects/obj_game/obj_game.yy",},
     {"name":"sRoadVertical","order":5,"path":"sprites/sRoadVertical/sRoadVertical.yy",},
     {"name":"spr_test_bg","order":1,"path":"sprites/spr_test_bg/spr_test_bg.yy",},
     {"name":"sRoadCorner","order":4,"path":"sprites/sRoadCorner/sRoadCorner.yy",},
