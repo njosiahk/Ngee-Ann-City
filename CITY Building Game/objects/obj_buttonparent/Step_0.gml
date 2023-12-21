@@ -10,3 +10,17 @@ else
 {
 	choice=item
 }
+
+//center on player
+
+var pausearray = Pausemenu();
+
+for (var i = 0; i < array_length(pausearray); i++) {
+	
+	if instance_exists( obj_mover ) && (item == pausearray[i]) {
+
+	x = (obj_mover.x-(sprite_width/2));
+	y = (obj_mover.y-(sprite_height/2)*(array_length(pausearray)-i)+obj_buttonmaker.linespace+sprite_height*i);
+	}
+
+}
