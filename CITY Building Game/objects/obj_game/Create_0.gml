@@ -5,6 +5,7 @@ cell_size = 128;
 
 setup=true
 turnsetup = true;
+turnbuild = false;
 
 prevA = noone;
 prevB = noone;
