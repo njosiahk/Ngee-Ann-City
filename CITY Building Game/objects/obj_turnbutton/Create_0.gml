@@ -9,3 +9,4 @@ select = ""
 nextlinesp = 25
 linewidth = sprite_get_width(spr_button)
 
+pressed = false;
