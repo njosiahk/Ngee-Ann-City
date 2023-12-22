@@ -15,6 +15,7 @@ moveSpeed = 16;
 moveX=lerp(moveX,inputX*moveSpeed,0.2);
 moveY=lerp(moveY,inputY*moveSpeed,0.2);
 
+
 x+=moveX
 y+=moveY
 
