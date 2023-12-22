@@ -8,3 +8,7 @@ calculate = false;
 
 rad = (sprite_get_height(spr_cell)+1)/2//folow cell size
 
+circlexx=x-1 //cause  of original x and y very important
+circlexx2 = x+obj_game.cell_size+1
+circleyy=y-1
+circleyy2 = y+obj_game.cell_size+1

@@ -23,10 +23,10 @@
 	}
 
 //}
-var circlex=x-1 //cause  of original x and y very important
-var circlex2 = x+sprite_width-1
-var circley=y-1
-var circley2 = y-1+sprite_height;
+circlex=circlexx //cause  of original x and y very important
+circlex2 = circlexx2
+circley=circleyy
+circley2 =circleyy2
 //know whene the turn ends
 if calculate {
 	//var buildinglist = [obj_comm,obj_road,obj_park,obj_ind,obj_res]
@@ -62,14 +62,14 @@ if calculate {
 	{
 		//road calculation
 		var buildinglist = [obj_road]// need to think what to do when  
-		circlex =x;
-		circlex2 = x+sprite_height;
+		circley +=1;
+		circley2 += -10;
 	}
 	//3 by 3 grids
 	//var numbercollision=collision_rectangle_list(x-1,y-1,x+obj_game.cell_size+1,y+obj_game.cell_size+1,buildinglist,false,true,my_dslist,true)//0-4
 	//cross grid
 	var numbercollision=collision_ellipse_list(circlex,circley,circlex2,circley2,buildinglist,true,true,my_dslist,true)//0-4
-	show_debug_message(id)
+	/*show_debug_message(id)
 	show_debug_message("x points "+string(circlex)+" "+string(circlex2))
 	show_debug_message("y points "+string(circley)+" "+string(circley2))
 	show_debug_message("    ")
@@ -80,6 +80,7 @@ if calculate {
 		show_debug_message("hit "+string(current_item.id))
 	}
 	show_debug_message("    ")
+	*/
 	if (self.object_index == obj_res)
 	{
 		
