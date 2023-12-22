@@ -88,7 +88,6 @@
     {"id":{"name":"sResumeGame","path":"sprites/sResumeGame/sResumeGame.yy",},},
     {"id":{"name":"spr_building","path":"sprites/spr_building/spr_building.yy",},},
     {"id":{"name":"MenuItems","path":"scripts/MenuItems/MenuItems.yy",},},
-    {"id":{"name":"obj_infobar","path":"objects/obj_infobar/obj_infobar.yy",},},
     {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},},
     {"id":{"name":"sRoadIntersection","path":"sprites/sRoadIntersection/sRoadIntersection.yy",},},
     {"id":{"name":"spr_mover","path":"sprites/spr_mover/spr_mover.yy",},},

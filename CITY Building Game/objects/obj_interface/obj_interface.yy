@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Main Menu",
-    "path": "folders/Objects/Main Menu.yy",
+    "name": "Game Control",
+    "path": "folders/Objects/Game Control.yy",
   },
   "parentObjectId": null,
   "persistent": false,
