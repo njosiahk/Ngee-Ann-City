@@ -46,8 +46,7 @@ else {
 		startY +=linespace
 		if (i >= array_length(buttonname))// what the name should be when there is no file
 		{
-			//var slotnum = i+1     // need further research for the what it do in objectbutton
-			//obj.item = "save slot "+string(slotnum)
+
 			obj.item="Free Save Slot"
 		}
 		else
@@ -70,17 +69,17 @@ else {
 		var xvalue=(camera_get_view_width(view_camera[0]) - logowidth )/ 5//x value for button
 		var yvalue = (camera_get_view_height(view_camera[0]) - logowidth )/ 5// y value for button
 		var obj=instance_create_layer(xvalue,yvalue,layername,obj_buttonparent)
-		obj.item ="back to mainmenu" // item added into list in menuscript
 		obj.pause=Pausemenu()
 		obj.main = Mainmenu()
 		obj.save= searchfiles()
 		obj.othername=otherbuttons()
+		obj.item = obj.othername[0]// item added into list in menuscript
 		obj.num = i
 	}
-//	if (menutype=="pause")
-//	{
-//		instance_deactivate_layer("Pause_layer")
-//	}
+/*	if (menutype=="pause")
+	{
+			instance_deactivate_layer("Pause_layer")
+	}*/
 draw=false
 }
 

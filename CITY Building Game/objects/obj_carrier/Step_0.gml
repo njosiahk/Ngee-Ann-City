@@ -8,9 +8,14 @@ if instance_exists( obj_mover )
 	x = (obj_mover.x-(sprite_width/2));
 	y = (obj_mover.y-(sprite_height/2));
 }
-
-
-
+if instance_exists(obj_pause)
+{
+	visible=true
+}
+else 
+{
+	visible = false
+}
 
 
 

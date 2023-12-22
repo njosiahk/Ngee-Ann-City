@@ -90,12 +90,4 @@ function searchfiles()
 		file_find_close()
 	 return files // if files=[] do nothing and show error message
 }
-function otherbuttons()
-{
-	var list=
-	[
-	"back to mainmenu",
-	"Free Save Slot"
-	]
-	return list;
-}
+

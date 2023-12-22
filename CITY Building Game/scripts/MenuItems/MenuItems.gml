@@ -24,8 +24,12 @@ var _button =
 return _button
 
 }
-function savedfiles()
+function otherbuttons()
 {
-	var _button = []
-	return _button
+	var list=
+	[
+	"Back",
+	"Free Save Slot"
+	]
+	return list;
 }

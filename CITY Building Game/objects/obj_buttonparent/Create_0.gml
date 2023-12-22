@@ -12,4 +12,12 @@ linewidth = sprite_get_width(spr_button)
 
 
 
-
+pausearray = Pausemenu();
+// make pause button not seen
+for (var i = 0; i<array_length(pausearray);i++)
+{
+	if item == pausearray[i]
+	{
+		visible =false
+	}
+}

@@ -2,6 +2,7 @@
 var buttonname = Pausemenu();
 var numberloops = array_length(buttonname);
 
+visible = false
 for (var i =0;i<numberloops;++i)
 	{
 	
