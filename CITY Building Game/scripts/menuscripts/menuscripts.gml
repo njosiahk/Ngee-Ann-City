@@ -1,37 +1,33 @@
-function save_game()
+function save_game(_filename)//filename is string and gameobjs is an array
 {
-	//have it go to different room that is the easiers method // need to room deactivate the game.
-	global.chosenfile="CityGame.txt"// variable used to chose which saves    Name
-	// will only have 2 saved files for now named "CityGame.txt" and "Saved1.txt"
+
 	
 
 	
 	var _struct =
 	{
-		//the data to be saved (example)
-		turn: global.turn // key and value
-		
+		//the data to be saved (example) // key and value
+		turn: global.turn,
+		point: global.points,
+		gold: global.gold,
+		buildings: global.data
 	};
 	
 	
 	
 	var _string =json_stringify(_struct);// convert to a json standard formatting
-	var filename =  global.chosenfile;
+	var filename =  _filename+".txt";
 	var _file = file_text_open_write(filename);
 	file_text_write_string(_file,_string); // save the _struct in the file in text format
 	file_text_close(_file);
 	
-	//ini_open("godwhere.bob")
-	//ini_write_real("save slots","Staff",global.hunger);
-	//ini_write_string("testing1","pls help me","where is this whereee...")
-	//ini_close()
+
 }
 
-function load_game()
+function load_game(_filename)
 {
-	//global.choosing is the name of the file that you want to load
-	// need to have the user use the file
-	// some data can be saved in the name of the file like a query string/ or have a different file that uses different format
+	//rework everything here
+	
 	filethere = false
 	global.chosenfile="CityGame.txt"
 	global.choosing ="CityGame.txt"
@@ -88,6 +84,6 @@ function searchfiles()
 			filename = file_find_next();
 		}
 		file_find_close()
-	 return files // if files=[] do nothing and show error message
+	 return files
 }
 

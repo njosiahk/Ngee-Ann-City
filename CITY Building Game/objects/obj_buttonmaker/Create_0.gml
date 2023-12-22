@@ -1,7 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
+show_debug_log(true)
+/////////////////////////////////////////////////
 logoheight = sprite_get_height(spr_title)
 logowidth = sprite_get_width(spr_title)
 swidth = sprite_get_width(spr_button)

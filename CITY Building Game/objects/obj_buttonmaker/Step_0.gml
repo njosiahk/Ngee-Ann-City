@@ -60,12 +60,12 @@ else {
 		obj.save= searchfiles()
 		obj.othername=otherbuttons()
 		obj.num = i
-
 	}
 }
 	if (menutype == "saved")
 	{
 		//back button
+		
 		var xvalue=(camera_get_view_width(view_camera[0]) - logowidth )/ 5//x value for button
 		var yvalue = (camera_get_view_height(view_camera[0]) - logowidth )/ 5// y value for button
 		var obj=instance_create_layer(xvalue,yvalue,layername,obj_buttonparent)
