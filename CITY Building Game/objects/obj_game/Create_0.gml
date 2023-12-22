@@ -6,6 +6,8 @@ cell_size = 128;
 setup=true
 turnsetup = true;
 
+prevA = noone;
+prevB = noone;
 optionA = noone;
 optionB = noone;
 

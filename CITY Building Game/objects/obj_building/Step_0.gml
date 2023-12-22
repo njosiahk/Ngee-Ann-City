@@ -23,11 +23,12 @@
 	}
 
 //}
-
-
+var circlex=x-1 //cause  of original x and y very important
+var circlex2 = x+sprite_width-1
+var circley=y-1
+var circley2 = y-1+sprite_height;
 //know whene the turn ends
-if turncreated != global.turn
-{
+if calculate {
 	//var buildinglist = [obj_comm,obj_road,obj_park,obj_ind,obj_res]
 	var scoreadd = 0
 	var my_dslist=ds_list_create()
@@ -60,15 +61,17 @@ if turncreated != global.turn
 	else if (self.object_index == obj_road)
 	{
 		//road calculation
-		var buildinglist = [obj_road]// need to think what to do when           
+		var buildinglist = [obj_road]// need to think what to do when  
+		circlex =x;
+		circlex2 = x+sprite_height;
 	}
 	//3 by 3 grids
 	//var numbercollision=collision_rectangle_list(x-1,y-1,x+obj_game.cell_size+1,y+obj_game.cell_size+1,buildinglist,false,true,my_dslist,true)//0-4
 	//cross grid
-	var numbercollision=collision_circle_list(circlex,circley,rad,buildinglist,true,true,my_dslist,true)//0-4
-	/*show_debug_message(id)
-	show_debug_message("x points "+string(circlex+rad)+" "+string(circlex-rad))
-	show_debug_message("y points "+string(circley+rad)+" "+string(circley-rad))
+	var numbercollision=collision_ellipse_list(circlex,circley,circlex2,circley2,buildinglist,true,true,my_dslist,true)//0-4
+	show_debug_message(id)
+	show_debug_message("x points "+string(circlex)+" "+string(circlex2))
+	show_debug_message("y points "+string(circley)+" "+string(circley2))
 	show_debug_message("    ")
 	show_debug_message(numbercollision)
 	for (var i = 0;i<ds_list_size(my_dslist);i++)
@@ -76,7 +79,7 @@ if turncreated != global.turn
 		var current_item = ds_list_find_value(my_dslist,i)
 		show_debug_message("hit "+string(current_item.id))
 	}
-	show_debug_message("    ")*/
+	show_debug_message("    ")
 	if (self.object_index == obj_res)
 	{
 		
@@ -119,7 +122,7 @@ if turncreated != global.turn
 	}
 	ds_list_clear(my_dslist)
 	global.points += scoreadd
-	turncreated=global.turn // to stop looping the function
+	calculate = false; // to stop looping the function
 }
 
 

@@ -64,6 +64,7 @@
     {"name":"sResumeGame","order":1,"path":"sprites/sResumeGame/sResumeGame.yy",},
     {"name":"spr_building","order":5,"path":"sprites/spr_building/spr_building.yy",},
     {"name":"MenuItems","order":2,"path":"scripts/MenuItems/MenuItems.yy",},
+    {"name":"obj_infobar","order":3,"path":"objects/obj_infobar/obj_infobar.yy",},
     {"name":"spr_button","order":5,"path":"sprites/spr_button/spr_button.yy",},
     {"name":"sRoadIntersection","order":3,"path":"sprites/sRoadIntersection/sRoadIntersection.yy",},
     {"name":"spr_mover","order":8,"path":"sprites/spr_mover/spr_mover.yy",},

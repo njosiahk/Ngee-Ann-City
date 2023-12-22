@@ -4,5 +4,6 @@
 //for now there is 8 items so far starting with main
 pressed = true;
 obj_game.turnsetup = true;
+obj_building.calculate = true;
 
 
