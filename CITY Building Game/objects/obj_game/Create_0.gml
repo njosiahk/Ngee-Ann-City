@@ -7,12 +7,15 @@ setup=true
 turnsetup = true;
 turnbuild = false;
 
+//building options
+build_array = [obj_res, obj_ind, obj_comm, obj_park, obj_road]; 
+
 prevA = noone;
 prevB = noone;
 optionA = noone;
 optionB = noone;
-
-
+buildingA = noone;
+buildingB = noone;
 //Calculate the needed space for grid
 
 var _grid_width = grid_width * cell_size;

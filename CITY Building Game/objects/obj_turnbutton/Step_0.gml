@@ -1,4 +1,5 @@
 
+
 if string_ends_with(item,".txt")
 {
 	choice=num
@@ -9,9 +10,7 @@ else
 }
 
 if pressed {
-	
 	global.turn +=1;
-	
 }
 
 

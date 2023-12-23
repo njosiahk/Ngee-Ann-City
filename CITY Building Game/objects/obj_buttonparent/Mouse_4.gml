@@ -14,7 +14,7 @@ if visible
 		global.gold=16;
 		global.points=0; // to be placed in obj_game
 		global.grid =[]
-		room_goto_next();
+		room_goto(test_spawn);
 		break;
 	case main[1]:
 	//Display High Scores

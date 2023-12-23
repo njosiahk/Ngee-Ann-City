@@ -14,6 +14,7 @@ for (var i = 0; i < grid_width; i++) {
 	}
 }
 setup = false
+show_message("grid made") // this shows when the grid gets completed right
 }
 
 
