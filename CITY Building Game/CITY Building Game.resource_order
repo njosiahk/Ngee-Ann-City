@@ -49,6 +49,7 @@
     {"name":"MI_SFX_31","order":30,"path":"sounds/MI_SFX_31/MI_SFX_31.yy",},
     {"name":"obj_comm","order":7,"path":"objects/obj_comm/obj_comm.yy",},
     {"name":"MI_SFX_42","order":41,"path":"sounds/MI_SFX_42/MI_SFX_42.yy",},
+    {"name":"spr_interface","order":10,"path":"sprites/spr_interface/spr_interface.yy",},
     {"name":"MI_SFX_40","order":39,"path":"sounds/MI_SFX_40/MI_SFX_40.yy",},
     {"name":"MI_SFX_35","order":34,"path":"sounds/MI_SFX_35/MI_SFX_35.yy",},
     {"name":"MI_SFX_27","order":26,"path":"sounds/MI_SFX_27/MI_SFX_27.yy",},

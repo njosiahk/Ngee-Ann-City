@@ -43,7 +43,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.11.1.129",
+    "IDEVersion": "2023.8.2.108",
   },
   "resources": [
     {"id":{"name":"MI_SFX_48","path":"sounds/MI_SFX_48/MI_SFX_48.yy",},},
@@ -71,6 +71,7 @@
     {"id":{"name":"MI_SFX_31","path":"sounds/MI_SFX_31/MI_SFX_31.yy",},},
     {"id":{"name":"obj_comm","path":"objects/obj_comm/obj_comm.yy",},},
     {"id":{"name":"MI_SFX_42","path":"sounds/MI_SFX_42/MI_SFX_42.yy",},},
+    {"id":{"name":"spr_interface","path":"sprites/spr_interface/spr_interface.yy",},},
     {"id":{"name":"MI_SFX_40","path":"sounds/MI_SFX_40/MI_SFX_40.yy",},},
     {"id":{"name":"MI_SFX_35","path":"sounds/MI_SFX_35/MI_SFX_35.yy",},},
     {"id":{"name":"MI_SFX_27","path":"sounds/MI_SFX_27/MI_SFX_27.yy",},},

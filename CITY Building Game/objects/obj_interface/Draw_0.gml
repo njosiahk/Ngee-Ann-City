@@ -1,14 +1,15 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-
+//text information
 Turnnumber = "Turn: "+string(global.turn);
-prevturn = "Prev Turn: "+string(global.prev_turn);
+prevturn = "Prev Turn: "+string(global.prev_turn); //remove in end prod
 gold = "Gold: "+string(global.gold);
 scores = "points: "+string(global.points);
-optiona = "A: " + string(obj_game.optionA);
-optionb = "B: " + string(obj_game.optionB);
+optiona = "A: " + object_get_name(obj_game.buildingA); //remove in end prod
+optionb = "B: " + object_get_name(obj_game.buildingB); //remove in end prod
 text = Turnnumber+"\n"+prevturn+"\n"+gold+"\n"+scores+"\n"+optiona+"\n"+optionb;
 
-draw_text_color(x,y,text,c_red,c_red,c_red,c_red,1);
+//draw interface "backboard"
+draw_sprite_ext(spr_interface,0,interface_x,interface_y,interfaceXscale,interfaceYscale,0,c_white,1);
 
+//draw options
+
+draw_text_transformed_color(interface_x,interface_y,text,2,2,0,c_red,c_red,c_red,c_red,1);

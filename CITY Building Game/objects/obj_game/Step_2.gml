@@ -15,6 +15,11 @@ if (global.turn != global.prev_turn) { //do new turn stuff
 		optionA = irandom_range(0,4);
 		optionB = irandom_range(0,4);
 	}
+	
+	//assign actual building
+	buildingA = build_array[optionA];
+	buildingB = build_array[optionB];
+	
 	//record new previous choices
 	prevA=optionA;
 	prevB=optionB;
