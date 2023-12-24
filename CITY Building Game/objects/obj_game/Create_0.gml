@@ -16,6 +16,10 @@ optionA = noone;
 optionB = noone;
 buildingA = noone;
 buildingB = noone;
+buildSpriteA = noone;
+buildSpriteB = noone;
+buildAname = noone;
+buildBname = noone;
 
 //Calculate the needed space for grid
 

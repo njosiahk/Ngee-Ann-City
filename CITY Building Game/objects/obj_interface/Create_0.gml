@@ -16,6 +16,8 @@ interface_height = interfaceYscale * sprite_height;
 interface_x_offset = (camW/2 - obj_mover.sprite_width/2);
 interface_y_offset = (camH/2 + obj_mover.sprite_height/2 - interface_height);
 
+option_difference = 180;
+
 //amend room height to fit interface (FUCKED UP CODE)
 //room_height += interface_height;
 

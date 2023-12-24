@@ -1,5 +1,7 @@
 
 pressed = true;
 obj_game.turnsetup = true;
-obj_building.calculate = true;
 
+if instance_exists(obj_building) {
+obj_building.calculate = true;
+}

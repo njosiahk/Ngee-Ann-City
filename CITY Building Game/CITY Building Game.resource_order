@@ -36,6 +36,7 @@
     {"name":"test_spawn","order":3,"path":"rooms/test_spawn/test_spawn.yy",},
     {"name":"MI_SFX_46","order":45,"path":"sounds/MI_SFX_46/MI_SFX_46.yy",},
     {"name":"MI_SFX_38","order":37,"path":"sounds/MI_SFX_38/MI_SFX_38.yy",},
+    {"name":"spr_frame","order":11,"path":"sprites/spr_frame/spr_frame.yy",},
     {"name":"MI_SFX_37","order":36,"path":"sounds/MI_SFX_37/MI_SFX_37.yy",},
     {"name":"obj_res","order":4,"path":"objects/obj_res/obj_res.yy",},
     {"name":"obj_road","order":5,"path":"objects/obj_road/obj_road.yy",},

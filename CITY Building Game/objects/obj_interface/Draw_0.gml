@@ -1,15 +1,71 @@
+var _Asprite = obj_game.buildSpriteA;
+var _Bsprite = obj_game.buildSpriteB;
+
 //text information
-Turnnumber = "Turn: "+string(global.turn);
-prevturn = "Prev Turn: "+string(global.prev_turn); //remove in end prod
+turnnum = "Turn: "+string(global.turn);
 gold = "Gold: "+string(global.gold);
-scores = "points: "+string(global.points);
-optiona = "A: " + object_get_name(obj_game.buildingA); //remove in end prod
-optionb = "B: " + object_get_name(obj_game.buildingB); //remove in end prod
-text = Turnnumber+"\n"+prevturn+"\n"+gold+"\n"+scores+"\n"+optiona+"\n"+optionb;
+curr_score = "Score: "+string(global.points);
+//prevturn = "Prev Turn: "+string(global.prev_turn); //remove in end prod
+//optiona = "A: " + object_get_name(obj_game.buildingA); //remove in end prod
+//optionb = "B: " + object_get_name(obj_game.buildingB); //remove in end prod
+
+text = turnnum+"\n"+curr_score+"\n"+gold;//"\n"+prevturn++"\n"+optiona+"\n"+optionb;
 
 //draw interface "backboard"
 draw_sprite_ext(spr_interface,0,interface_x,interface_y,interfaceXscale,interfaceYscale,0,c_white,1);
 
-//draw options
+//draw options' variables
+var _Aspritex = interface_x + camW/2 - sprite_get_width(_Asprite)/2 - option_difference;
+var _Bspritex = interface_x + camW/2 - sprite_get_width(_Bsprite)/2 + option_difference;
+var _optY = interface_y+(interface_height*0.2);
 
-draw_text_transformed_color(interface_x,interface_y,text,2,2,0,c_red,c_red,c_red,c_red,1);
+//font variables
+var _optfont_wantsize = 36;
+var _optfootfont_wantsize = 54;
+var _statfont_wantsize = 64;
+var _font_currsize = string_height("hello world");
+var _statfont_scale = _statfont_wantsize/_font_currsize;
+var _optfont_scale = _optfont_wantsize/_font_currsize
+var _optfootfont_scale = _optfootfont_wantsize/_font_currsize
+var _Aoptx = _Aspritex + (sprite_get_width(_Asprite)/2);
+var _Boptx = _Bspritex + (sprite_get_width(_Bsprite)/2);
+var _optheady = interface_y+(interface_height*0.11);
+var _optfooty = interface_y+(interface_height*0.8);
+
+#region //draw middle segment
+
+//draw A frame
+draw_sprite(spr_frame,0,_Aspritex-4, _optY-4);
+//draw option A
+draw_sprite(_Asprite,0,_Aspritex,_optY);
+//write "option A"
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+draw_text_transformed(_Aoptx, _optheady, "Option A", _optfont_scale, _optfont_scale, 0); //header
+draw_text_transformed(_Aoptx, _optfooty, obj_game.buildAname, _optfootfont_scale, _optfootfont_scale, 0); //footer
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
+
+
+//draw B frame
+draw_sprite(spr_frame,0,_Bspritex-4, _optY-4);
+//draw option B
+draw_sprite(_Bsprite,0,_Bspritex,_optY);
+//write "option B"
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+draw_text_transformed(_Boptx, _optheady, "Option B", _optfont_scale, _optfont_scale, 0); //header
+draw_text_transformed(_Boptx, _optfooty, obj_game.buildBname, _optfootfont_scale, _optfootfont_scale, 0); //footer
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
+
+#endregion
+
+//draw stats variables
+var _statX = interface_x + (camW*0.05);
+var _statY = interface_y + (interface_height/2);
+
+//draw stats (refine)
+draw_set_valign(fa_middle);
+draw_text_transformed(_statX,_statY,text,_statfont_scale,_statfont_scale,0);
+draw_set_valign(fa_top);
