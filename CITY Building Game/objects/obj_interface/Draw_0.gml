@@ -39,7 +39,7 @@ draw_sprite(spr_frame,0,_Aspritex-4, _optY-4);
 //draw option A
 draw_sprite(_Asprite,0,_Aspritex,_optY);
 //write "option A"
-draw_set_halign(fa_center);
+draw_set_halign(fa_center);	
 draw_set_valign(fa_middle);
 draw_text_transformed(_Aoptx, _optheady, "Option A", _optfont_scale, _optfont_scale, 0); //header
 draw_text_transformed(_Aoptx, _optfooty, obj_game.buildAname, _optfootfont_scale, _optfootfont_scale, 0); //footer
