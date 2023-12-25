@@ -102,7 +102,7 @@ if calculate {
 	}
 	show_debug_message("    ")
 	*/
-	if (self.object_index == obj_res)
+	else if (self.object_index == obj_res)
 	{
 		
 		for (var i = 0;i<ds_list_size(my_dslist);i++)
