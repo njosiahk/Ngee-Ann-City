@@ -31,6 +31,7 @@ circley2 =circleyy2
 if calculate {
 	//var buildinglist = [obj_comm,obj_road,obj_park,obj_ind,obj_res]
 	var scoreadd = 0
+	var gold =0
 	var my_dslist=ds_list_create()
 	//what to do when turn ends
 	if (self.object_index == obj_comm)
@@ -69,6 +70,26 @@ if calculate {
 	//var numbercollision=collision_rectangle_list(x-1,y-1,x+obj_game.cell_size+1,y+obj_game.cell_size+1,buildinglist,false,true,my_dslist,true)//0-4
 	//cross grid
 	var numbercollision=collision_ellipse_list(circlex,circley,circlex2,circley2,buildinglist,true,true,my_dslist,true)//0-4
+	if (self.object_index == obj_ind)
+	{
+		gold = numbercollision
+	}
+	else if (self.object_index == obj_comm)
+	{
+		for (var i = 0;i<ds_list_size(my_dslist);i++)
+		{
+			var current_item = ds_list_find_value(my_dslist,i)
+			var o = current_item.object_index
+			if o == obj_res
+			{
+				gold +=1
+			}
+			else if o == obj_comm
+			{
+				scoreadd +=1
+			}
+		}
+	}
 	/*show_debug_message(id)
 	show_debug_message("x points "+string(circlex)+" "+string(circlex2))
 	show_debug_message("y points "+string(circley)+" "+string(circley2))
@@ -123,6 +144,7 @@ if calculate {
 	}
 	ds_list_clear(my_dslist)
 	global.points += scoreadd
+	global.gold += gold
 	calculate = false; // to stop looping the function
 }
 
