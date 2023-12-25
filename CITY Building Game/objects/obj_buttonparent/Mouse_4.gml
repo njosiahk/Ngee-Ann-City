@@ -8,13 +8,17 @@ if visible
 	{
 	case main[0]:
 	//start new game
+	
+	//put in a script or something
 		global.room_from=room
 		global.prev_turn=0;
 		global.turn=1;
 		global.gold=16;
-		global.points=0; // to be placed in obj_game
+		global.points=0; 
 		global.grid =[]
-		room_goto_next();
+		var input=instance_create_layer(camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/2,camera_get_view_y(view_camera[0])+camera_get_view_height(view_camera[0])/2,"keyboard",obj_userinput)
+		input.messa="Please enter your username"
+		input.action="name"
 		break;
 	case main[1]:
 	//Display High Scores
@@ -25,13 +29,8 @@ if visible
 	case main[2]://load game
 	// go to new room
 	global.room_from=room
-
-	
 	room_goto(fileroom)
-	// array of saved games name
 
-	//load_game()
-	//go to gameroom
 
 	break;
 	case main[3]:
@@ -49,21 +48,14 @@ if visible
 	global.room_from=room
 	var saveload = obj_saveloader
 	room_instance_add(fileroom,0,0,obj_saveloader)
-	global.data = []
-	for (var i =0;i<array_length(global.grid);i++)
-	{
-		array_push(global.data,object_get_name(global.grid[i].object_index))
-	}
-	
-	
+	save_grid()
 	room_goto(fileroom)
 
 	break;
 	case pause[2]:
 	//load game
-	global.room_from=room
 
-	
+	global.room_from=room
 	room_goto(fileroom)
 	//go to gameroom
 
@@ -76,11 +68,16 @@ if visible
 	//save if have object then is save
 	if ( instance_exists(obj_saveloader))
 	{
-		instance_create_layer(camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/2,camera_get_view_y(view_camera[0])+camera_get_view_height(view_camera[0])/2,"keyboard",obj_userinput)
+		var input=instance_create_layer(camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/2,camera_get_view_y(view_camera[0])+camera_get_view_height(view_camera[0])/2,"keyboard",obj_userinput)
+		input.messa ="Replace filename"
+		input.previousname= item
+		input.action ="save"
 	} 
 	else// load the game
 	{
-		
+		load_game(item)
+		global.loadditem=true
+		room_goto(test_spawn)
 	}
 	
 	break;
@@ -98,8 +95,18 @@ if visible
 
 	break;
 	case othername[1]:// no file at all
-	// empty save file
-
+		// empty save file
+		//save if have object then is save
+		if ( instance_exists(obj_saveloader))
+		{
+			var input= instance_create_layer(camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/2,camera_get_view_y(view_camera[0])+camera_get_view_height(view_camera[0])/2,"keyboard",obj_userinput)
+			input.messa ="Enter File Name (Max 20 Characters)"
+			input.action ="save"
+		} 
+		else// load the game
+		{
+			
+		}
 	break;
 	}
 

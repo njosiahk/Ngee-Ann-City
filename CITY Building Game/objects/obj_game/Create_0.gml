@@ -9,7 +9,11 @@ cells_built = 0;
 setup=true
 turnsetup = true;
 turnbuild = false;
-
+if !variable_global_exists("loadditem")
+{
+	global.loadditem = false
+}
+load= global.loadditem
 //building options
 build_array = [obj_res, obj_ind, obj_comm, obj_park, obj_road]; 
 

@@ -1,6 +1,37 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+// setting variable
+if !variable_global_exists("room_from")
+{
+		global.room_from=room
+		show_debug_message("room true")
+}
+if !variable_global_exists("prev_turn")
+{
+		global.prev_turn=0;
+		show_debug_message("pturn")
+}
+if !variable_global_exists("turn")
+{
+		global.turn=1;
+		show_debug_message("turn")
+}
+if !variable_global_exists("gold")
+{
+		global.gold=16;
+		show_debug_message("gol")
+}
+if !variable_global_exists("points")
+{
+		global.points=0;
+		show_debug_message("poinm")
+}
+if !variable_global_exists("grid")
+{
+		global.grid =[]
+		show_debug_message("gri")
+}
 show_debug_log(true)
 /////////////////////////////////////////////////
 logoheight = sprite_get_height(spr_title)
