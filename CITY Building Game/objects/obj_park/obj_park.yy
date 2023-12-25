@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Park",
-    "path": "sprites/Park/Park.yy",
+    "name": "spr_park",
+    "path": "sprites/spr_park/spr_park.yy",
   },
   "spriteMaskId": null,
   "visible": true,

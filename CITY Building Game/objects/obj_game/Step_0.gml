@@ -16,7 +16,12 @@ for (var i = 0; i < grid_width; i++) {
 setup = false
 }
 
-
+//end game code
+if cells_built >= total_cells || global.gold <= 0 { //end the game
+	show_message("game ended")
+	//go to final score tabulation or whatever
+	//go back to main menu
+}
 
 
 

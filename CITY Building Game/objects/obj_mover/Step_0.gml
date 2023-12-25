@@ -25,4 +25,19 @@ var _camH = camera_get_view_height(view_camera[0]);
 
 //clamp mover
 x = clamp(x, 0 + _camW/2, room_width-_camW/2);
-y = clamp(y, 0 + _camH/2, room_height-+_camH/2);
+y = clamp(y, 0 + _camH/2, (room_height-_camH/2)+obj_interface.interface_height);
+
+//move all hud stuff
+if instance_exists( obj_camera )
+{
+	obj_camera.x = x - _camW/2;
+	obj_camera.y = y - _camH/2;
+}
+
+if instance_exists( obj_interface )
+{
+	obj_interface.x = (x-(obj_interface.sprite_width/2));
+	obj_interface.y = (y-(obj_interface.sprite_height/2));
+}
+
+

@@ -3,15 +3,26 @@ grid_width = 20;
 grid_height = 20;
 cell_size = 128;
 
+total_cells = grid_width * grid_height;
+cells_built = 0;
+
 setup=true
 turnsetup = true;
 turnbuild = false;
+
+//building options
+build_array = [obj_res, obj_ind, obj_comm, obj_park, obj_road]; 
 
 prevA = noone;
 prevB = noone;
 optionA = noone;
 optionB = noone;
-
+buildingA = noone;
+buildingB = noone;
+buildSpriteA = noone;
+buildSpriteB = noone;
+buildAname = noone;
+buildBname = noone;
 
 //Calculate the needed space for grid
 

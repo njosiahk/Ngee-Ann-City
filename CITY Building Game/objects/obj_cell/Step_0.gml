@@ -27,57 +27,70 @@ if available {
 		image_index = 3;
 	}
 
-if global.gold > 0{
-	if chooseBuild 
-	{ //if is chosen
-		if (keyboard_check_pressed(ord("1"))) { //press 1 to choose building 1
-			var in = instance_create_layer(x, y, "Game_layer", obj_road); //creates building 1
-			show_debug_message("space")
-			show_debug_message(id)
-			show_debug_message(in)
-			show_debug_message(array_get_index(global.grid,id))//go down then go side
-			global.grid[array_get_index(global.grid,id)] = in
-			show_debug_message(global.grid)//working 
-			deactivate = true; //destroy cell later
-			obj_game.turnbuild = true;
-		}
-		else if (keyboard_check_pressed(ord("2"))) {
-			var in = instance_create_layer(x, y, "Game_layer", obj_ind);
-			global.grid[array_get_index(global.grid,id)] = in
-			deactivate = true;
-			obj_game.turnbuild = true;
-		}
-		else if (keyboard_check_pressed(ord("3"))) {
-			var in = instance_create_layer(x, y, "Game_layer", obj_park);
-			global.grid[array_get_index(global.grid,id)] = in
-			deactivate = true;
-			obj_game.turnbuild = true;
+	if global.gold > 0{
+		if chooseBuild { //if is chosen
+			#region //test building
+			/*if (keyboard_check_pressed(ord("1"))) { //press 1 to choose building 1
+				var in = instance_create_layer(x, y, "Game_layer", obj_road); //creates building 1
+				show_debug_message("space")
+				show_debug_message(id)
+				show_debug_message(in)
+				show_debug_message(array_get_index(global.grid,id))//go down then go side
+				global.grid[array_get_index(global.grid,id)] = in
+				show_debug_message(global.grid)//working 
+				deactivate = true; //destroy cell later
+				obj_game.turnbuild = true;
 			}
+			else if (keyboard_check_pressed(ord("2"))) {
+				var in = instance_create_layer(x, y, "Game_layer", obj_ind);
+				global.grid[array_get_index(global.grid,id)] = in
+				deactivate = true;
+				obj_game.turnbuild = true;
+			}
+			else if (keyboard_check_pressed(ord("3"))) {
+				var in = instance_create_layer(x, y, "Game_layer", obj_park);
+				global.grid[array_get_index(global.grid,id)] = in
+				deactivate = true;
+				obj_game.turnbuild = true;
+				}
 	
-		else if (keyboard_check_pressed(ord("4"))) {
-		var in = instance_create_layer(x, y, "Game_layer", obj_comm);
-		global.grid[array_get_index(global.grid,id)] = in
-		deactivate = true;
-		obj_game.turnbuild = true;
-		}
-		else if (keyboard_check_pressed(ord("5"))) {
-		var in = instance_create_layer(x, y, "Game_layer", obj_res);
-		global.grid[array_get_index(global.grid,id)] = in
-		deactivate = true;
-		obj_game.turnbuild = true;
-		}
-		else {
-		//print not inaff gold
+			else if (keyboard_check_pressed(ord("4"))) {
+				var in = instance_create_layer(x, y, "Game_layer", obj_comm);
+				global.grid[array_get_index(global.grid,id)] = in
+				deactivate = true;
+				obj_game.turnbuild = true;
+			}
+			else if (keyboard_check_pressed(ord("5"))) {
+				var in = instance_create_layer(x, y, "Game_layer", obj_res);
+				global.grid[array_get_index(global.grid,id)] = in
+				deactivate = true;
+				obj_game.turnbuild = true;
+			}*/
+			#endregion
+			if (global.chooseAkey) {
+				var in = instance_create_layer(x, y, "Game_layer", obj_game.buildingA);
+				global.grid[array_get_index(global.grid,id)] = in
+				deactivate = true;
+				obj_game.turnbuild = true;
+				obj_game.cells_built+=1;
+			}
+			else if (global.chooseBkey) {
+				var in = instance_create_layer(x, y, "Game_layer", obj_game.buildingB);
+				global.grid[array_get_index(global.grid,id)] = in
+				deactivate = true;
+				obj_game.turnbuild = true;
+				obj_game.cells_built+=1;
+			}
+			else {
+			//print not inaff gold
+			}
 		}
 	}
-	else {
-		image_index = 0;	
-	}
-}
-	
 }
 
-
+else {
+	image_index = 0;	
+}
 
 
 
