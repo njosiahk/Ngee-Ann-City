@@ -12,3 +12,4 @@ circlexx=x-1 //cause  of original x and y very important
 circlexx2 = x+obj_game.cell_size+1
 circleyy=y-1
 circleyy2 = y+obj_game.cell_size+1
+
