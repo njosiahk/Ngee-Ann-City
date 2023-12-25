@@ -3,6 +3,9 @@ grid_width = 20;
 grid_height = 20;
 cell_size = 128;
 
+total_cells = grid_width * grid_height;
+cells_built = 0;
+
 setup=true
 turnsetup = true;
 turnbuild = false;
