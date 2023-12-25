@@ -63,6 +63,7 @@
     "IDEVersion": "2023.11.1.129",
   },
   "resources": [
+    {"id":{"name":"submitscore","path":"objects/submitscore/submitscore.yy",},},
     {"id":{"name":"MI_SFX_48","path":"sounds/MI_SFX_48/MI_SFX_48.yy",},},
     {"id":{"name":"obj_exitbutton","path":"objects/obj_exitbutton/obj_exitbutton.yy",},},
     {"id":{"name":"obj_buildtest","path":"objects/obj_buildtest/obj_buildtest.yy",},},
@@ -91,6 +92,7 @@
     {"id":{"name":"objLLIncreaseScore","path":"objects/objLLIncreaseScore/objLLIncreaseScore.yy",},},
     {"id":{"name":"objLLCenteredHighscores","path":"objects/objLLCenteredHighscores/objLLCenteredHighscores.yy",},},
     {"id":{"name":"LootLockerLeaderboardsDocumentation","path":"notes/LootLockerLeaderboardsDocumentation/LootLockerLeaderboardsDocumentation.yy",},},
+    {"id":{"name":"LeaderBoard","path":"rooms/LeaderBoard/LeaderBoard.yy",},},
     {"id":{"name":"MI_SFX_18","path":"sounds/MI_SFX_18/MI_SFX_18.yy",},},
     {"id":{"name":"spr_title","path":"sprites/spr_title/spr_title.yy",},},
     {"id":{"name":"MI_SFX_03","path":"sounds/MI_SFX_03/MI_SFX_03.yy",},},
@@ -184,6 +186,7 @@
     {"id":{"name":"objLLCoin","path":"objects/objLLCoin/objLLCoin.yy",},},
     {"id":{"name":"sprLLPlayerJump","path":"sprites/sprLLPlayerJump/sprLLPlayerJump.yy",},},
     {"id":{"name":"spr_mover","path":"sprites/spr_mover/spr_mover.yy",},},
+    {"id":{"name":"leaderboardtesting","path":"objects/leaderboardtesting/leaderboardtesting.yy",},},
     {"id":{"name":"MI_SFX_44","path":"sounds/MI_SFX_44/MI_SFX_44.yy",},},
     {"id":{"name":"MI_SFX_25","path":"sounds/MI_SFX_25/MI_SFX_25.yy",},},
     {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},},
@@ -228,6 +231,7 @@
     {"roomId":{"name":"roomLLRockyRunnerExample","path":"rooms/roomLLRockyRunnerExample/roomLLRockyRunnerExample.yy",},},
     {"roomId":{"name":"roomLLSimpleLeaderboardExample","path":"rooms/roomLLSimpleLeaderboardExample/roomLLSimpleLeaderboardExample.yy",},},
     {"roomId":{"name":"roomLootLockerLeaderboardsGuide","path":"rooms/roomLootLockerLeaderboardsGuide/roomLootLockerLeaderboardsGuide.yy",},},
+    {"roomId":{"name":"LeaderBoard","path":"rooms/LeaderBoard/LeaderBoard.yy",},},
   ],
   "templateType": null,
   "TextureGroups": [

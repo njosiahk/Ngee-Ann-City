@@ -22,7 +22,10 @@ if visible
 		break;
 	case main[1]:
 	//Display High Scores
-
+	global.room_from=room
+	//
+	
+	room_goto(LeaderBoard)
 
 
 	break;
@@ -61,6 +64,12 @@ if visible
 
 	break;
 	case pause[3]:
+	//end game and retrun to main menu also need to destroy load file if they use
+	global.room_from=room
+	instance_create_layer(0,0,"Game_layer",submitscore)
+	//room_goto(Room1)
+	break;
+	case pause[4]:
 	game_end()
 	break;
 
