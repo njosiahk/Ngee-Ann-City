@@ -17,6 +17,18 @@ if keyboard_check_pressed(vk_escape) && menutype == "pause" //check for object t
 	}
 
 }
+if room == LeaderBoard && draw {
+	var xvalue = camW/2 - swidth/2// value for button
+	var yvalue = camH*0.75// y value for button
+	var obj=instance_create_depth(xvalue,yvalue,-2000,obj_buttonparent)
+	obj.pause=Pausemenu()
+	obj.main = Mainmenu()
+	obj.save= searchfiles()
+	obj.othername=otherbuttons()
+	obj.item = "Back to Menu"// item added into list in menuscript
+	obj.num = ""
+	draw = false;
+}
 if (draw){
 	if (menutype=="Main")
 	{
