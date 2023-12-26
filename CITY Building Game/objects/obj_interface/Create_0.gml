@@ -18,6 +18,8 @@ interface_y_offset = (camH/2 + obj_mover.sprite_height/2 - interface_height);
 
 option_difference = 180;
 
+new_image_speed = 6/room_speed;
+spr_img_index = 0;
 //amend room height to fit interface (FUCKED UP CODE)
 //room_height += interface_height;
 

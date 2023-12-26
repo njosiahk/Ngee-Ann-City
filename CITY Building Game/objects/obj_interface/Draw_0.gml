@@ -15,6 +15,7 @@ text = turnnum+"\n"+curr_score+"\n"+gold;//"\n"+prevturn++"\n"+optiona+"\n"+opti
 draw_sprite_ext(spr_interface,0,interface_x,interface_y,interfaceXscale,interfaceYscale,0,c_white,1);
 
 //options' variables
+#region //blah blah stuff
 var _Aspritex = interface_x + camW/2 - sprite_get_width(_Asprite)/2 - option_difference;
 var _Bspritex = interface_x + camW/2 - sprite_get_width(_Bsprite)/2 + option_difference;
 var _optY = interface_y+(interface_height*0.2);
@@ -29,6 +30,7 @@ var _Aoptx = _Aspritex + (sprite_get_width(_Asprite)/2);
 var _Boptx = _Bspritex + (sprite_get_width(_Bsprite)/2);
 var _optheady = interface_y+(interface_height*0.11);
 var _optfooty = interface_y+(interface_height*0.8);
+#endregion
 
 #region //draw middle segment
 
@@ -46,8 +48,7 @@ draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 #endregion
 //show option button A
-draw_sprite_ext(spr_pickA, image_index/5, interface_x + (camW*0.37), _optY, 5, 5, 0, c_white, 1);
-
+draw_sprite_ext(spr_pickA, spr_img_index, interface_x + (camW*0.35), _optY, 5, 5, 0, c_white, 1);
 //draw B frame
 draw_sprite(spr_frame,0,_Bspritex-4, _optY-4);
 //draw option B
@@ -62,8 +63,12 @@ draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 #endregion
 //show option button B
-draw_sprite_ext(spr_pickB, image_index/5, interface_x + (camW*0.63), _optY, 5, 5, 0, c_white, 1);
-
+draw_sprite_ext(spr_pickB, spr_img_index, interface_x + (camW*0.65), _optY, 5, 5, 0, c_white, 1);
+spr_img_index+=new_image_speed;
+if spr_img_index >= 3
+{
+	spr_img_index = 0;	
+}
 #endregion
 
 //draw stats variables
