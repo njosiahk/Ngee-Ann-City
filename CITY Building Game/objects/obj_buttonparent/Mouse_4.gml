@@ -69,9 +69,7 @@ if visible && !instance_exists(obj_userinput)
 	//end game and retrun to main menu also need to destroy load file if they use
 	global.room_from=room
 	instance_create_layer(0,0,"Game_layer",obj_submitscore)
-	LootLockerReset()
-	
-	room_goto(Room1)//go to leaderboard room
+	room_goto(LeaderBoard)//go to leaderboard room
 	break;
 	case pause[4]:
 	game_end()
