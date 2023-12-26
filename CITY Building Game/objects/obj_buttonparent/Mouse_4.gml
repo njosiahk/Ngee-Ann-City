@@ -120,6 +120,10 @@ if visible && !instance_exists(obj_userinput)
 			
 		}
 	break;
+	case "Back to Menu":
+		global.room_from=room
+		room_goto(Room1);
+	break;
 	}
 
 }
