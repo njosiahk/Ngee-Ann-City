@@ -2,7 +2,7 @@
 
 
 //change the room name correctly
-if visible
+if visible && !instance_exists(obj_userinput)
 {
 	switch (choice)
 	{

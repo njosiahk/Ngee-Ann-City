@@ -7,10 +7,12 @@ item = ""
 select = ""
 choice =""
 num=noone
-nextlinesp = 25
+nextlinesp = 38
 linewidth = sprite_get_width(spr_button)
 
-
+silver_font = font_add("Silver.ttf", 32, false, false, 32, 128);
+draw_set_font(silver_font);
+font_enable_sdf(silver_font,true);
 
 pausearray = Pausemenu();
 // make pause button not seen

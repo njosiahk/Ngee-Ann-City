@@ -17,7 +17,7 @@ function Pausemenu(){
 var _button = 
 [
 	"Resume Game",
-	"Save game",
+	"Save Game",
 	"Load Game",
 	"Return to Main Menu",
 	"Exit Game"
