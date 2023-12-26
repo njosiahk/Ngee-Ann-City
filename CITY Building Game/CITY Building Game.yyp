@@ -48,7 +48,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Background","folderPath":"folders/Sprites/Background.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Building Types","folderPath":"folders/Sprites/Building Types.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Parktile set","folderPath":"folders/Sprites/Building Types/Parktile set.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Interface","folderPath":"folders/Sprites/Interface.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Main Menu","folderPath":"folders/Sprites/Main Menu.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Pause Menu","folderPath":"folders/Sprites/Pause Menu.yy",},

@@ -8,7 +8,7 @@ if visible && !instance_exists(obj_userinput)
 	{
 	case main[0]:
 	//start new game
-	
+		LootLockerReset()
 	//put in a script or something
 		global.room_from=room
 		global.prev_turn=0;
