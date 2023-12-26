@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+alarm[0] = room_speed;
 messa=""
 lineheight = 38
 camwidth= camera_get_view_width(view_camera[0])/2

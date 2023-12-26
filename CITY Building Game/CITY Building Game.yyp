@@ -152,6 +152,7 @@
     {"id":{"name":"obj_carrier","path":"objects/obj_carrier/obj_carrier.yy",},},
     {"id":{"name":"obj_userinput","path":"objects/obj_userinput/obj_userinput.yy",},},
     {"id":{"name":"roomLLRockyRunnerExample","path":"rooms/roomLLRockyRunnerExample/roomLLRockyRunnerExample.yy",},},
+    {"id":{"name":"obj_leaderboard","path":"objects/obj_leaderboard/obj_leaderboard.yy",},},
     {"id":{"name":"objLLGuide","path":"objects/objLLGuide/objLLGuide.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_pause","path":"objects/obj_pause/obj_pause.yy",},},

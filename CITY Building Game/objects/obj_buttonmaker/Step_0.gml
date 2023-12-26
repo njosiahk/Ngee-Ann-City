@@ -41,7 +41,7 @@ if (menutype == "pause") {
 else {
 	for (var i =0;i<numberloops;++i)
 	{
-	
+		
 		var obj=instance_create_layer(startX,startY+(i*sheight),layername,obj_buttonparent)
 		startY +=linespace
 		if (i >= array_length(buttonname))// what the name should be when there is no file

@@ -120,6 +120,7 @@
     {"name":"obj_carrier","order":7,"path":"objects/obj_carrier/obj_carrier.yy",},
     {"name":"obj_userinput","order":9,"path":"objects/obj_userinput/obj_userinput.yy",},
     {"name":"roomLLRockyRunnerExample","order":5,"path":"rooms/roomLLRockyRunnerExample/roomLLRockyRunnerExample.yy",},
+    {"name":"obj_leaderboard","order":6,"path":"objects/obj_leaderboard/obj_leaderboard.yy",},
     {"name":"obj_pause","order":3,"path":"objects/obj_pause/obj_pause.yy",},
     {"name":"objLLRock","order":2,"path":"objects/objLLRock/objLLRock.yy",},
     {"name":"sprLLRock","order":4,"path":"sprites/sprLLRock/sprLLRock.yy",},

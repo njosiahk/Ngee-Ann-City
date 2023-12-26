@@ -5,9 +5,6 @@ camH = camera_get_view_height(view_camera[0]);
 interface_x = 0;
 interface_y = 0;
 
-text_x = 0;
-text_y = 0;
-
 interfaceXscale = camera_get_view_width(view_camera[0])/sprite_width;
 interfaceYscale = (camera_get_view_height(view_camera[0])/4)/sprite_height;
 

@@ -5,11 +5,8 @@ var _Bsprite = obj_game.buildSpriteB;
 turnnum = "Turn: "+string(global.turn);
 gold = "Gold: "+string(global.gold);
 curr_score = "Score: "+string(global.points);
-//prevturn = "Prev Turn: "+string(global.prev_turn); //remove in end prod
-//optiona = "A: " + object_get_name(obj_game.buildingA); //remove in end prod
-//optionb = "B: " + object_get_name(obj_game.buildingB); //remove in end prod
 
-text = turnnum+"\n"+curr_score+"\n"+gold;//"\n"+prevturn++"\n"+optiona+"\n"+optionb;
+text = turnnum+"\n"+curr_score+"\n"+gold;
 
 //draw interface "backboard"
 draw_sprite_ext(spr_interface,0,interface_x,interface_y,interfaceXscale,interfaceYscale,0,c_white,1);
