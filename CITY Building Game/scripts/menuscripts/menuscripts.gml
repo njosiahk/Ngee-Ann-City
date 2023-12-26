@@ -3,7 +3,7 @@ function linkleaderboard()
 	var gameid = "dev_72a7ef59872d4d0c86ba2c43d7ed5eb1"
 	var version ="0.0.0.1"
 	var development = true // development mode or live mode still have no idea the diff need to learn more
-	var leaderboardid = "Points"
+	var leaderboardid = "19364"
  return [gameid,version,development,leaderboardid]
 }
 
