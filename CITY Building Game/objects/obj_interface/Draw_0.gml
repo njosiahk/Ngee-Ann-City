@@ -14,12 +14,10 @@ text = turnnum+"\n"+curr_score+"\n"+gold;//"\n"+prevturn++"\n"+optiona+"\n"+opti
 //draw interface "backboard"
 draw_sprite_ext(spr_interface,0,interface_x,interface_y,interfaceXscale,interfaceYscale,0,c_white,1);
 
-//draw options' variables
+//options' variables
 var _Aspritex = interface_x + camW/2 - sprite_get_width(_Asprite)/2 - option_difference;
 var _Bspritex = interface_x + camW/2 - sprite_get_width(_Bsprite)/2 + option_difference;
 var _optY = interface_y+(interface_height*0.2);
-
-//font variables
 var _optfont_wantsize = 36;
 var _optfootfont_wantsize = 54;
 var _statfont_wantsize = 64;
@@ -39,25 +37,32 @@ draw_sprite(spr_frame,0,_Aspritex-4, _optY-4);
 //draw option A
 draw_sprite(_Asprite,0,_Aspritex,_optY);
 //write "option A"
+#region
 draw_set_halign(fa_center);	
 draw_set_valign(fa_middle);
 draw_text_transformed(_Aoptx, _optheady, "Option A", _optfont_scale, _optfont_scale, 0); //header
 draw_text_transformed(_Aoptx, _optfooty, obj_game.buildAname, _optfootfont_scale, _optfootfont_scale, 0); //footer
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
-
+#endregion
+//show option button A
+draw_sprite_ext(spr_pickA, image_index/5, interface_x + (camW*0.37), _optY, 5, 5, 0, c_white, 1);
 
 //draw B frame
 draw_sprite(spr_frame,0,_Bspritex-4, _optY-4);
 //draw option B
 draw_sprite(_Bsprite,0,_Bspritex,_optY);
 //write "option B"
+#region
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_text_transformed(_Boptx, _optheady, "Option B", _optfont_scale, _optfont_scale, 0); //header
 draw_text_transformed(_Boptx, _optfooty, obj_game.buildBname, _optfootfont_scale, _optfootfont_scale, 0); //footer
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
+#endregion
+//show option button B
+draw_sprite_ext(spr_pickB, image_index/5, interface_x + (camW*0.63), _optY, 5, 5, 0, c_white, 1);
 
 #endregion
 

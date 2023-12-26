@@ -29,7 +29,7 @@ if available {
 
 	if global.gold > 0{
 		if chooseBuild { //if is chosen
-			#region //test building
+			/*#region //test building
 			if (keyboard_check_pressed(ord("1"))) { //press 1 to choose building 1
 				var in = instance_create_layer(x, y, "Game_layer", obj_road); //creates building 1
 				show_debug_message("space")
@@ -66,7 +66,7 @@ if available {
 				deactivate = true;
 				obj_game.turnbuild = true;
 			}
-			#endregion
+			#endregion*/
 			if (global.chooseAkey) {
 				var in = instance_create_layer(x, y, "Game_layer", obj_game.buildingA);
 				global.grid[array_get_index(global.grid,id)] = in
