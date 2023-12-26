@@ -1,3 +1,4 @@
+
 	if global.turn != 1 {
 		available = false;	
 	}
@@ -10,6 +11,8 @@
 		available = false;
 	}
 	
+	if !instance_exists(obj_pause) {
+#region
 if available {
 	if position_meeting(mouse_x, mouse_y, id){ //check if mouse is on tile
 		image_index = 1; //highlight hovered
@@ -91,9 +94,9 @@ if available {
 else {
 	image_index = 0;	
 }
+#endregion
 
-
-
+	}
 
 
 

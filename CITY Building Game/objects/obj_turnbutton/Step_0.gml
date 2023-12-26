@@ -8,6 +8,8 @@ else
 	choice=item
 }
 
+	if !instance_exists(obj_pause) {
+
 if position_meeting(mouse_x, mouse_y, id) && mouse_check_button_pressed(mb_left) {
 	
 	pressed = true;
@@ -23,7 +25,7 @@ if pressed {
 	global.turn +=1;
 }
 
-
+	}
 
 
 
