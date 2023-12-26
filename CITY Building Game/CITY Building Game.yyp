@@ -64,7 +64,7 @@
     "IDEVersion": "2023.11.1.129",
   },
   "resources": [
-    {"id":{"name":"submitscore","path":"objects/submitscore/submitscore.yy",},},
+    {"id":{"name":"obj_submitscore","path":"objects/obj_submitscore/obj_submitscore.yy",},},
     {"id":{"name":"MI_SFX_48","path":"sounds/MI_SFX_48/MI_SFX_48.yy",},},
     {"id":{"name":"obj_exitbutton","path":"objects/obj_exitbutton/obj_exitbutton.yy",},},
     {"id":{"name":"obj_buildtest","path":"objects/obj_buildtest/obj_buildtest.yy",},},
@@ -152,7 +152,7 @@
     {"id":{"name":"MI_SFX_23","path":"sounds/MI_SFX_23/MI_SFX_23.yy",},},
     {"id":{"name":"obj_cell","path":"objects/obj_cell/obj_cell.yy",},},
     {"id":{"name":"sprLLPlayerStill","path":"sprites/sprLLPlayerStill/sprLLPlayerStill.yy",},},
-    {"id":{"name":"testfixed","path":"objects/testfixed/testfixed.yy",},},
+    {"id":{"name":"obj_LinkBoard","path":"objects/obj_LinkBoard/obj_LinkBoard.yy",},},
     {"id":{"name":"MI_SFX_45","path":"sounds/MI_SFX_45/MI_SFX_45.yy",},},
     {"id":{"name":"spr_cell","path":"sprites/spr_cell/spr_cell.yy",},},
     {"id":{"name":"spr_keyboard","path":"sprites/spr_keyboard/spr_keyboard.yy",},},

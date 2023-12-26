@@ -45,7 +45,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
-    {"name":"submitscore","order":4,"path":"objects/submitscore/submitscore.yy",},
+    {"name":"obj_submitscore","order":4,"path":"objects/obj_submitscore/obj_submitscore.yy",},
     {"name":"MI_SFX_48","order":47,"path":"sounds/MI_SFX_48/MI_SFX_48.yy",},
     {"name":"obj_exitbutton","order":5,"path":"objects/obj_exitbutton/obj_exitbutton.yy",},
     {"name":"obj_buildtest","order":7,"path":"objects/obj_buildtest/obj_buildtest.yy",},
@@ -121,7 +121,7 @@
     {"name":"MI_SFX_23","order":22,"path":"sounds/MI_SFX_23/MI_SFX_23.yy",},
     {"name":"obj_cell","order":3,"path":"objects/obj_cell/obj_cell.yy",},
     {"name":"sprLLPlayerStill","order":3,"path":"sprites/sprLLPlayerStill/sprLLPlayerStill.yy",},
-    {"name":"testfixed","order":5,"path":"objects/testfixed/testfixed.yy",},
+    {"name":"obj_LinkBoard","order":5,"path":"objects/obj_LinkBoard/obj_LinkBoard.yy",},
     {"name":"MI_SFX_45","order":44,"path":"sounds/MI_SFX_45/MI_SFX_45.yy",},
     {"name":"spr_cell","order":4,"path":"sprites/spr_cell/spr_cell.yy",},
     {"name":"spr_keyboard","order":9,"path":"sprites/spr_keyboard/spr_keyboard.yy",},

@@ -68,8 +68,10 @@ if visible
 	case pause[3]:
 	//end game and retrun to main menu also need to destroy load file if they use
 	global.room_from=room
-	instance_create_layer(0,0,"Game_layer",submitscore)
-	room_goto(Room1)
+	instance_create_layer(0,0,"Game_layer",obj_submitscore)
+	LootLockerReset()
+	
+	room_goto(Room1)//go to leaderboard room
 	break;
 	case pause[4]:
 	game_end()
