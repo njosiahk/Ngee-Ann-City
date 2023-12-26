@@ -103,8 +103,11 @@ function searchfiles()
 		
 		while (filename != "")
 		{
-			array_push(files,filename)
-			//show_message(filename)
+			if filename != "getheusernameoftheworldplaceholddder.txt"
+			{
+				array_push(files,filename)
+				//show_message(filename)
+			}
 			filename = file_find_next();
 		}
 		file_find_close()
