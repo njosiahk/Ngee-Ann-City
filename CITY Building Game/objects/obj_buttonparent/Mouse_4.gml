@@ -49,8 +49,10 @@ if visible
 	
 	//save game
 	global.room_from=room
-	var saveload = obj_saveloader
-	room_instance_add(fileroom,0,0,obj_saveloader)
+
+	//room_instance_add(fileroom,0,0,obj_saveloader)
+	
+	global.saveload = true
 	save_grid()
 	room_goto(fileroom)
 
@@ -67,7 +69,7 @@ if visible
 	//end game and retrun to main menu also need to destroy load file if they use
 	global.room_from=room
 	instance_create_layer(0,0,"Game_layer",submitscore)
-	//room_goto(Room1)
+	room_goto(Room1)
 	break;
 	case pause[4]:
 	game_end()
@@ -75,8 +77,9 @@ if visible
 
 	case num://have file
 	//save if have object then is save
-	if ( instance_exists(obj_saveloader))
+	if ( global.saveload)
 	{
+		//show_debug_message(string(instance_exists(obj_saveloader))+" check 1 "+ room_get_name(room))
 		var input=instance_create_layer(camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/2,camera_get_view_y(view_camera[0])+camera_get_view_height(view_camera[0])/2,"keyboard",obj_userinput)
 		input.messa ="Replace filename"
 		input.previousname= item
@@ -106,7 +109,7 @@ if visible
 	case othername[1]:// no file at all
 		// empty save file
 		//save if have object then is save
-		if ( instance_exists(obj_saveloader))
+		if ( global.saveload)
 		{
 			var input= instance_create_layer(camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/2,camera_get_view_y(view_camera[0])+camera_get_view_height(view_camera[0])/2,"keyboard",obj_userinput)
 			input.messa ="Enter File Name (Max 20 Characters)"

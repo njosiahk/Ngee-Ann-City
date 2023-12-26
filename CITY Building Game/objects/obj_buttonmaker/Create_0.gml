@@ -2,6 +2,10 @@
 // You can write your code in this editor
 
 // setting variable
+if !variable_global_exists("saveload")
+{
+	global.saveload=false
+}
 if !variable_global_exists("room_from")
 {
 		global.room_from=room
