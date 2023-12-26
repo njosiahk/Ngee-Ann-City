@@ -18,7 +18,7 @@ leaderboard_y_offset = (camH/2 - sprite_height/2);
 
 loaded = false;
 
-
-
-
+current_rank = ""
+current_name = ""
+current_score = ""
 

@@ -57,18 +57,18 @@ else {
 	draw_set_halign(fa_left);
 }
 #region //show current stats
-/*
-if global.username != "" {
-	show_message(current_rank);
-	draw_text_transformed(_boardtext_rankx, _frame_y + _frame_H + margin/1.75, current_rank + ".", 1.675, 1.675, 0);
-	show_message(current_name);
+
+if current_name != "" {
+	//show_message(current_rank);
+	draw_text_transformed(_boardtext_rankx, _frame_y + _frame_H + margin/1.75, current_rank , 1.675, 1.675, 0);
+	//show_message(current_name);
 	draw_set_halign(fa_center);
 	draw_text_transformed(_boardtext_namex, _frame_y + _frame_H + margin/1.75, current_name, 1.675, 1.675, 0);
 	draw_set_halign(fa_left);
-	show_message(current_score);
+	//show_message(current_score);
 	draw_set_halign(fa_right);
 	draw_text_transformed(_boardtext_scorex, _frame_y + _frame_H + margin/1.75, current_score, 1.675, 1.675, 0);
 	draw_set_halign(fa_left);
 }
-*/
+
 #endregion

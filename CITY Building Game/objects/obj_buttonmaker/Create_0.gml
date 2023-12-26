@@ -40,7 +40,7 @@ if !variable_global_exists("grid")
 }
 if !variable_global_exists("username")
 {
-	global.username=""
+	 getusername()
 }
 show_debug_log(true)
 /////////////////////////////////////////////////

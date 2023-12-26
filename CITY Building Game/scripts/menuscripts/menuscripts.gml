@@ -62,6 +62,26 @@ function load_game(_filename)
 	file_text_close(_file);
 	
 }
+
+function saveusername()
+{
+	var file = file_text_open_write("getheusernameoftheworldplaceholddder.txt")
+	var _struct =
+	{
+		username : global.username
+	};
+	var _string =json_stringify(_struct);
+	file_text_write_string(file,_string); // save the _struct in the file in text format
+	file_text_close(file);
+}
+function getusername()
+{
+	var _file = file_text_open_read("getheusernameoftheworldplaceholddder.txt")
+	var _json = file_text_read_string(_file);
+	var _struct = json_parse(_json);
+	global.username = _struct.username;
+	file_text_close(_file);
+}
 function searchfiles()
 { 
 
