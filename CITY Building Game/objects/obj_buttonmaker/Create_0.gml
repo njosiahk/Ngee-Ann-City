@@ -42,7 +42,7 @@ if !variable_global_exists("username")
 {
 	 getusername()
 }
-show_debug_log(true)
+//show_debug_log(true)
 /////////////////////////////////////////////////
 logoheight = sprite_get_height(spr_title)
 logowidth = sprite_get_width(spr_title)

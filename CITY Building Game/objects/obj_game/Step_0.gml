@@ -44,9 +44,12 @@ load = false
 //end game code
 if cells_built >= total_cells || global.gold <= 0 { //end the game
 	
-	show_message("game ended")
+	//show_message("game ended")
 	//go to final score tabulation or whatever
 	//go back to main menu
+	global.room_from=room
+	instance_create_layer(0,0,"Game_layer",obj_submitscore)
+	room_goto(LeaderBoard)
 }
 
 
