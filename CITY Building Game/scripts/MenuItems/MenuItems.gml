@@ -4,8 +4,9 @@ function Mainmenu(){
 var _button = 
 [
 	"Start New Game",
-	"Display High Scores",
 	"Load Game",
+	"Display High Scores",
+	"Setting",
 	"Exit Game"
 ];
 return _button
@@ -19,6 +20,7 @@ var _button =
 	"Resume Game",
 	"Save Game",
 	"Load Game",
+	"Setting",
 	"Return to Main Menu",
 	"Exit Game"
 ];

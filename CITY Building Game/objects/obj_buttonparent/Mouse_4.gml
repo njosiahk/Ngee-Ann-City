@@ -20,23 +20,23 @@ if visible && !instance_exists(obj_userinput)
 		input.messa="Please enter your username"
 		input.action="name"
 		break;
-	case main[1]:
-	//Display High Scores
-	global.room_from=room
-	//
-	
-	room_goto(LeaderBoard)
-
-
-	break;
-	case main[2]://load game
+	case main[1]://load game
 	// go to new room
 	global.room_from=room
 	room_goto(fileroom)
-
-
 	break;
+	
+	case main[2]:
+	//Display High Scores
+	global.room_from=room
+	//
+	room_goto(LeaderBoard)
+	break;
+
 	case main[3]:
+//setting
+	break;
+	case main[4]:
 	game_end()
 	break;
 
@@ -66,12 +66,15 @@ if visible && !instance_exists(obj_userinput)
 
 	break;
 	case pause[3]:
+//setting
+	break;
+	case pause[4]:
 	//end game and retrun to main menu also need to destroy load file if they use
 	global.room_from=room
 	instance_create_layer(0,0,"Game_layer",obj_submitscore)
 	room_goto(LeaderBoard)//go to leaderboard room
 	break;
-	case pause[4]:
+	case pause[5]:
 	game_end()
 	break;
 

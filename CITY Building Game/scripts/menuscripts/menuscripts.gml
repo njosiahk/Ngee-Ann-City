@@ -49,8 +49,8 @@ function load_game(_filename)
 {
 	//file_exists checks if file exist
 	//file_text_open_read    read the text
-
-	var _file = file_text_open_read(_filename)
+	var str = getcurrentworkingdirectory()
+	var _file = file_text_open_read(str+_filename)
 	var _json = file_text_read_string(_file);
 	var _struct = json_parse(_json);// convert back to struct format
 	global.turn = _struct.turn;
@@ -77,11 +77,15 @@ function saveusername()
 }
 function getusername()
 {
-	var _file = file_text_open_read("getheusernameoftheworldplaceholddder.txt")
-	var _json = file_text_read_string(_file);
-	var _struct = json_parse(_json);
-	global.username = _struct.username;
-	file_text_close(_file);
+	if file_exists(str+"getheusernameoftheworldplaceholddder.txt")
+	{
+		var str = getcurrentworkingdirectory()
+		var _file = file_text_open_read(str+"getheusernameoftheworldplaceholddder.txt")
+		var _json = file_text_read_string(_file);
+		var _struct = json_parse(_json);
+		global.username = _struct.username;
+		file_text_close(_file);
+	}
 }
 function searchfiles()
 { 
@@ -90,6 +94,9 @@ function searchfiles()
 		var files =[]
 		var dirfind = str + "*.txt"
 		var filename = file_find_first(dirfind, fa_directory);//filename of saved file
+		
+//		show_debug_message(fa_directory)
+//		show_debug_message(dirfind)
 		
 		while (filename != "")
 		{
@@ -114,6 +121,7 @@ function getcurrentworkingdirectory()
 			//str+=ar[i]+"/"
 		}
 		str+=string(game_project_name)+"\\"
+
 		return str
 		
 }
