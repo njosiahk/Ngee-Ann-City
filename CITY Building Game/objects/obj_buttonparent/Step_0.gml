@@ -1,16 +1,18 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
-if string_ends_with(item,".txt")
-{
-	choice=num
+if item!=""{
+	if string_ends_with(item,".txt")
+	{
+		choice=num
+		itemname = string_replace(item,".txt","")
+		
+	}
+	else 
+	{
+		choice=item
+	}
 }
-else
-{
-	choice=item
-}
-
 //center on player
 
 

@@ -3,7 +3,15 @@
 
 draw_self()
 draw_set_color(c_white)
-text =item
+
+if (room == fileroom&&!global.saveload&&typ=="")
+{
+	text =itemname
+}
+else
+{
+	text =item
+}
 if (item != ""){
 	if (select != "" )
 	{

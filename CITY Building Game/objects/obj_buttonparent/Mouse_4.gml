@@ -77,9 +77,9 @@ if visible && !instance_exists(obj_userinput)
 
 	case num://have file
 	//save if have object then is save
+
 	if ( global.saveload)
 	{
-		//show_debug_message(string(instance_exists(obj_saveloader))+" check 1 "+ room_get_name(room))
 		var input=instance_create_layer(camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/2,camera_get_view_y(view_camera[0])+camera_get_view_height(view_camera[0])/2,"keyboard",obj_userinput)
 		input.messa ="Replace filename"
 		input.previousname= item
@@ -98,12 +98,11 @@ if visible && !instance_exists(obj_userinput)
 	//back button in saveroom
 	case othername[0]: // check how many items in the script
 	//go back to mainmenu
-	if global.room_from != noone
-	{
+
 		var gt =global.room_from
 		global.room_from=room
 		room_goto(gt)
-	}
+	
 
 	break;
 	case othername[1]:// no file at all
@@ -115,10 +114,7 @@ if visible && !instance_exists(obj_userinput)
 			input.messa ="Enter File Name (Max 20 Characters)"
 			input.action ="save"
 		} 
-		else// load the game
-		{
-			
-		}
+
 	break;
 	case "Back to Menu":
 		global.room_from=room

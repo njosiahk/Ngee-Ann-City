@@ -6,7 +6,7 @@ leader_rank = LLHighscoresTopRankList();
 leader_name = LLHighscoresTopNamesList();
 leader_score = LLHighscoresTopScoreList();
 
-nospa = LLHighscoresCenteredFormatted()
+/*nospa = LLHighscoresCenteredFormatted()
 if nospa !=""
 {
 
@@ -16,14 +16,24 @@ if nospa !=""
 	for (var i =0;i<=array_length(arr);i++)
 	{
 
-		if (global.username!=""&&string_pos(global.username,arr[i]) != 0)
+		if (global.username!="")
 		{
-			currentline = arr[i]
-			break
+			if string_pos(global.username,arr[i]) != 0
+			{
+				currentline = arr[i]
+				break
+			}
 		}
 	}
 	var currlinearr = string_split(currentline," ",true)
 	current_rank = currlinearr[0]
 	current_name = currlinearr[1]
 	current_score =  currlinearr[2]
+}
+*/
+if global.username!="" 
+{
+	current_rank = "YOU:"
+	current_name = global.username
+	current_score =  global.points
 }

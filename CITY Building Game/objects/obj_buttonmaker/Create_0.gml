@@ -11,32 +11,26 @@ if !variable_global_exists("saveload")
 if !variable_global_exists("room_from")
 {
 		global.room_from=room
-		//show_debug_message("room true")
 }
 if !variable_global_exists("prev_turn")
 {
 		global.prev_turn=0;
-		//show_debug_message("pturn")
 }
 if !variable_global_exists("turn")
 {
 		global.turn=1;
-		//show_debug_message("turn")
 }
 if !variable_global_exists("gold")
 {
 		global.gold=16;
-		//show_debug_message("gol")
 }
 if !variable_global_exists("points")
 {
 		global.points=0;
-		//show_debug_message("poinm")
 }
 if !variable_global_exists("grid")
 {
 		global.grid =[]
-		//show_debug_message("gri")
 }
 if !variable_global_exists("username")
 {
@@ -84,7 +78,5 @@ draw =true
 
 logoXstart=(camera_get_view_width(view_camera[0]) - logowidth )/ 2;
 
-// to be changed for the scroll code
-
-// height of camera minus the height 
+drawtext=false
 

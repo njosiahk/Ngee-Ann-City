@@ -90,18 +90,7 @@ if calculate {
 			}
 		}
 	}
-	/*show_debug_message(id)
-	show_debug_message("x points "+string(circlex)+" "+string(circlex2))
-	show_debug_message("y points "+string(circley)+" "+string(circley2))
-	show_debug_message("    ")
-	show_debug_message(numbercollision)
-	for (var i = 0;i<ds_list_size(my_dslist);i++)
-	{
-		var current_item = ds_list_find_value(my_dslist,i)
-		show_debug_message("hit "+string(current_item.id))
-	}
-	show_debug_message("    ")
-	*/
+	
 	else if (self.object_index == obj_res)
 	{
 		
@@ -109,14 +98,12 @@ if calculate {
 		{
 			var current_item = ds_list_find_value(my_dslist,i)
 			var o = current_item.object_index//object name....obj_road
-			//show_debug_message(object_get_name(current_item.object_index))
-			//show_debug_message(string(o))
+			
 			if o == obj_ind// positon matters
 			{
 				scoreadd = 1
 				i=ds_list_size(my_dslist)//break loop (somehow break not working)
-				//show_debug_message("ind")
-				//show_debug_message("ind "+string(scoreadd))
+
 				break;
 			}
 			else
@@ -124,18 +111,14 @@ if calculate {
 				if o == obj_park
 				{
 					scoreadd += 2
-					//show_debug_message("parktrue")
 				}
 				else
 				{
 					scoreadd += 1
-					//show_debug_message("otherstru")
 				}
 			}
-			//show_debug_message(string(scoreadd))
 			
 		}
-		//show_message(string(scoreadd))
 	}
 	else
 	{

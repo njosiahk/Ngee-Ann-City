@@ -35,12 +35,9 @@ if available {
 			/*#region //test building
 			if (keyboard_check_pressed(ord("1"))) { //press 1 to choose building 1
 				var in = instance_create_layer(x, y, "Game_layer", obj_road); //creates building 1
-				show_debug_message("space")
-				show_debug_message(id)
-				show_debug_message(in)
-				show_debug_message(array_get_index(global.grid,id))//go down then go side
+
 				global.grid[array_get_index(global.grid,id)] = in
-				show_debug_message(global.grid)//working 
+
 				deactivate = true; //destroy cell later
 				obj_game.turnbuild = true;
 			}

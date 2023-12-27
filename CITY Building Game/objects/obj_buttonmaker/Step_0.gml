@@ -40,40 +40,46 @@ if (draw){
 
 	//code for background in menu for pause
 	var numberloops = array_length(buttonname)
-	if(menutype == "saved")
+	if(menutype == "saved")&&global.saveload
 	{
 		numberloops = 4// so that there is always 4 slots no matter what
 	}
 	
-if (menutype == "pause") {
+	if (menutype == "pause") {
 	
-	var carrier = instance_create_layer(x, y, layername, obj_carrier);
+		var carrier = instance_create_layer(x, y, layername, obj_carrier);
 	
-}
-else {
-	for (var i =0;i<numberloops;++i)
-	{
-		
-		var obj=instance_create_layer(startX,startY+(i*sheight),layername,obj_buttonparent)
-		startY +=linespace
-		if (i >= array_length(buttonname))// what the name should be when there is no file
-		{
-
-			obj.item="Free Save Slot"
-		}
-		else
-		{
-		
-			obj.item =buttonname[i]
-		}
-		obj.pause=Pausemenu()
-		obj.main = Mainmenu()
-		//show_message(array_length(arry))
-		obj.save= searchfiles()
-		obj.othername=otherbuttons()
-		obj.num = i
 	}
-}
+	else {
+		if numberloops > 0
+		{
+			for (var i =0;i<numberloops;++i)
+			{
+		
+				var obj=instance_create_layer(startX,startY+(i*sheight),layername,obj_buttonparent)
+				startY +=linespace
+				if (i >= array_length(buttonname))// what the name should be when there is no file
+				{
+					obj.item="Free Save Slot"
+				}
+				else
+				{
+					obj.item =buttonname[i]
+				}
+				obj.pause=Pausemenu()
+				obj.main = Mainmenu()
+				//show_message(array_length(arry))
+				obj.save= searchfiles()
+				obj.othername=otherbuttons()
+				obj.num = i
+			}
+			drawtext = false
+		}
+		else 
+		{
+			drawtext = true
+		}
+	}
 	if (menutype == "saved")
 	{
 		//back button
@@ -86,7 +92,8 @@ else {
 		obj.save= searchfiles()
 		obj.othername=otherbuttons()
 		obj.item = obj.othername[0]// item added into list in menuscript
-		obj.num = i
+		obj.typ="back"
+		obj.num = ""
 	}
 /*	if (menutype=="pause")
 	{

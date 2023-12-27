@@ -30,10 +30,10 @@ function save_game(_filename,_previous)//filename is string and gameobjs is an a
 	};
 	
 	
-	
+	var dir = getcurrentworkingdirectory()
 	var _string =json_stringify(_struct);// convert to a json standard formatting
 	var filename =  _filename+".txt";
-	var _file = file_text_open_write(filename);
+	var _file = file_text_open_write(dir+filename);
 	if _previous !=""
 	{
 		//delete file
@@ -65,7 +65,8 @@ function load_game(_filename)
 
 function saveusername()
 {
-	var file = file_text_open_write("getheusernameoftheworldplaceholddder.txt")
+	var dir = getcurrentworkingdirectory()
+	var file = file_text_open_write(dir+"getheusernameoftheworldplaceholddder.txt")
 	var _struct =
 	{
 		username : global.username
@@ -84,18 +85,7 @@ function getusername()
 }
 function searchfiles()
 { 
-
-		var dir = working_directory
-		var ar = string_split(dir,"\\")
-		var str="";
-		for (var i =0;i<array_length(ar)-4;i++)
-		{
-			str+=ar[i]+"\\"
-			//str+=ar[i]+"/"
-		}
-		str+=string(game_project_name)+"\\"
-
-		
+		var str = getcurrentworkingdirectory()
 		// get the directory str = the directory
 		var files =[]
 		var dirfind = str + "*.txt"
@@ -112,5 +102,19 @@ function searchfiles()
 		}
 		file_find_close()
 	 return files
+}
+function getcurrentworkingdirectory()
+{
+		var dir = working_directory
+		var ar = string_split(dir,"\\")
+		var str="";
+		for (var i =0;i<array_length(ar)-4;i++)
+		{
+			str+=ar[i]+"\\"
+			//str+=ar[i]+"/"
+		}
+		str+=string(game_project_name)+"\\"
+		return str
+		
 }
 
