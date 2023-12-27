@@ -65,6 +65,7 @@ else if (roomname == room_get_name(fileroom))
 	buttonname = searchfiles()// array for saved files
 }
 //else if room is startroom
+
 else{
 buttonname=Pausemenu()
 menutype = "pause"

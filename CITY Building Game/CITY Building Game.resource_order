@@ -112,6 +112,7 @@
     {"name":"MI_SFX_23","order":22,"path":"sounds/MI_SFX_23/MI_SFX_23.yy",},
     {"name":"obj_cell","order":3,"path":"objects/obj_cell/obj_cell.yy",},
     {"name":"sprLLPlayerStill","order":3,"path":"sprites/sprLLPlayerStill/sprLLPlayerStill.yy",},
+    {"name":"obj_music","order":10,"path":"objects/obj_music/obj_music.yy",},
     {"name":"obj_LinkBoard","order":5,"path":"objects/obj_LinkBoard/obj_LinkBoard.yy",},
     {"name":"MI_SFX_45","order":44,"path":"sounds/MI_SFX_45/MI_SFX_45.yy",},
     {"name":"spr_cell","order":4,"path":"sprites/spr_cell/spr_cell.yy",},

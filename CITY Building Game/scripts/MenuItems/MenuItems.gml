@@ -19,6 +19,7 @@ var _button =
 	"Resume Game",
 	"Save Game",
 	"Load Game",
+	"Setting",
 	"Return to Main Menu",
 	"Exit Game"
 ];
