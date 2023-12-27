@@ -40,7 +40,14 @@ if !variable_global_exists("grid")
 }
 if !variable_global_exists("username")
 {
-	 getusername()
+	if file_exists("getheusernameoftheworldplaceholddder.txt")
+	{
+		getusername()
+	}
+	else
+	{
+		global.username=""
+	}
 }
 //show_debug_log(true)
 /////////////////////////////////////////////////

@@ -58,7 +58,7 @@ else {
 }
 #region //show current stats
 
-if current_name != "" {
+if global.username != "" {
 	//show_message(current_rank);
 	draw_text_transformed(_boardtext_rankx, _frame_y + _frame_H + margin/1.75, current_rank , 1.675, 1.675, 0);
 	//show_message(current_name);
