@@ -6,8 +6,8 @@ visible = false
 for (var i =0;i<numberloops;++i)
 	{
 	
-		var obj = instance_create_depth(x,y+(i*obj_buttonmaker.sheight),(layer_get_depth("Pause_layer")-10),obj_buttonparent)
-		y += obj_buttonmaker.linespace //WARNING (MIGHT BREAK WHEN CLAMPED)
+		var obj = instance_create_depth(x,y+(i*(obj_buttonmaker.sheight-obj_buttonmaker.linespace)),(layer_get_depth("Pause_layer")-10),obj_buttonparent)
+		//y += obj_buttonmaker.linespace //WARNING (MIGHT BREAK WHEN CLAMPED)
 
 		obj.item =buttonname[i]
 

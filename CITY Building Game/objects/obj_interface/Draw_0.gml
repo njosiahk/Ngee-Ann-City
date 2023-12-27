@@ -39,7 +39,7 @@ draw_sprite(_Asprite,0,_Aspritex,_optY);
 #region
 draw_set_halign(fa_center);	
 draw_set_valign(fa_middle);
-draw_text_transformed(_Aoptx, _optheady, "Option A", _optfont_scale, _optfont_scale, 0); //header
+//draw_text_transformed(_Aoptx, _optheady, "Option A", _optfont_scale, _optfont_scale, 0); //header
 draw_text_transformed(_Aoptx, _optfooty, obj_game.buildAname, _optfootfont_scale, _optfootfont_scale, 0); //footer
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
@@ -54,7 +54,7 @@ draw_sprite(_Bsprite,0,_Bspritex,_optY);
 #region
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
-draw_text_transformed(_Boptx, _optheady, "Option B", _optfont_scale, _optfont_scale, 0); //header
+//draw_text_transformed(_Boptx, _optheady, "Option B", _optfont_scale, _optfont_scale, 0); //header
 draw_text_transformed(_Boptx, _optfooty, obj_game.buildBname, _optfootfont_scale, _optfootfont_scale, 0); //footer
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
