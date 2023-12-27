@@ -34,11 +34,11 @@ if !variable_global_exists("grid")
 }
 if !variable_global_exists("username")
 {
-	if file_exists("getheusernameoftheworldplaceholddder.txt")
+	try
 	{
 		getusername()
 	}
-	else
+	catch(_exception)
 	{
 		global.username=""
 	}
