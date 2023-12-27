@@ -6,7 +6,7 @@ camW = camera_get_view_width(view_camera[0]);
 camH = camera_get_view_height(view_camera[0]);
 
 buttonXoffset = camW * 0.775;
-buttonYoffset = camH * 0.085;
+buttonYoffset = camH * 0.08;
 
 image_speed = 0;
 image_index = 0;
