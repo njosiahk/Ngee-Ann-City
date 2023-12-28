@@ -16,6 +16,7 @@ if visible && !instance_exists(obj_userinput)
 		global.gold=16;
 		global.points=0; 
 		global.grid =[]
+		global.data=noone // saving game array
 		var input=instance_create_layer(camera_get_view_x(view_camera[0])+camera_get_view_width(view_camera[0])/2,camera_get_view_y(view_camera[0])+camera_get_view_height(view_camera[0])/2,"keyboard",obj_userinput)
 		input.messa="Please enter your username"
 		input.action="name"

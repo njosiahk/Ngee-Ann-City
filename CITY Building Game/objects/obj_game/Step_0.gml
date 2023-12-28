@@ -4,8 +4,9 @@ var _start_y = (room_height - grid_height * cell_size) / 2;
 
 //loop to create grid
 
-if (setup)&&!load
+if (setup)&&!load && global.data==noone	
 {
+
 	for (var i = 0; i < grid_width; i++) {
 		for (var j = 0; j < grid_height; j++) {
 			var _instance = instance_create_layer(_start_x + (i * cell_size), _start_y + (j * cell_size),"Game_layer", obj_cell);
@@ -18,6 +19,7 @@ setup = false
 }
 else if (setup)
 {
+
 	var num = 0
 	for (var i = 0; i < sqrt(array_length(global.data)); i++) 
 	{

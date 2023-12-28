@@ -9,7 +9,7 @@ function linkleaderboard()
 
 function save_grid()
 {
-	global.data=[] // saving game array
+	global.data=[]
 	for (var i =0;i<array_length(global.grid);i++)
 	{
 		array_push(global.data,object_get_name(global.grid[i].object_index))
