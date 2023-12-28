@@ -34,6 +34,7 @@ function save_game(_filename,_previous)//filename is string and gameobjs is an a
 	var _string =json_stringify(_struct);// convert to a json standard formatting
 	var filename =  _filename+".txt";
 	var _file = file_text_open_write(dir+filename);
+	//show_message(dir+filename)
 	if _previous !=""
 	{
 		//delete file
@@ -93,9 +94,9 @@ function searchfiles()
 		// get the directory str = the directory
 		var files =[]
 		var dirfind = str + "*.txt"
-		var filename = file_find_first(dirfind, fa_directory);//filename of saved file
+		var filename = file_find_first(dirfind, fa_none);//filename of saved file
 		
-//		show_debug_message(fa_directory)
+
 //		show_debug_message(dirfind)
 		
 		while (filename != "")
@@ -120,7 +121,11 @@ function getcurrentworkingdirectory()
 			str+=ar[i]+"\\"
 			//str+=ar[i]+"/"
 		}
+		
 		str+=string(game_project_name)+"\\"
+		//var str = program_directory
+		//show_message(str)
+		//show_message(working_directory)
 
 		return str
 		
