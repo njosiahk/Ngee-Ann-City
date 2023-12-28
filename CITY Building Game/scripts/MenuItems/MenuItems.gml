@@ -6,7 +6,7 @@ var _button =
 	"Start New Game",
 	"Load Game",
 	"Display High Scores",
-	"Setting",
+	"Settings",
 	"Exit Game"
 ];
 return _button
@@ -21,7 +21,7 @@ var _button =
 	"Resume Game",
 	"Save Game",
 	"Load Game",
-	"Setting",
+	"Settings",
 	"Return to Main Menu",
 	"Exit Game"
 ];
