@@ -70,6 +70,7 @@ if available {
 			if (global.chooseAkey) {
 				var in = instance_create_layer(x, y, "Game_layer", obj_game.buildingA);
 				global.grid[array_get_index(global.grid,id)] = in
+				audio_play_sound(snd_build,1,false);
 				deactivate = true;
 				obj_game.turnbuild = true;
 				obj_game.cells_built+=1;
@@ -77,6 +78,7 @@ if available {
 			else if (global.chooseBkey) {
 				var in = instance_create_layer(x, y, "Game_layer", obj_game.buildingB);
 				global.grid[array_get_index(global.grid,id)] = in
+				audio_play_sound(snd_build,1,false);
 				deactivate = true;
 				obj_game.turnbuild = true;
 				obj_game.cells_built+=1;
