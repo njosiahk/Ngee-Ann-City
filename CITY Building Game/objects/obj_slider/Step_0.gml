@@ -2,8 +2,9 @@
 //&& position_meeting(mouse_x,mouse_y,id)
 var leftpress = mouse_check_button(mb_left)
 
-if leftpress 
+if leftpress &&(position_meeting(mouse_x,mouse_y,id)||position_meeting(mouse_x,mouse_y,obj_bar))
 {
+	show_debug_message(string(position_meeting(mouse_x,mouse_y,id)))
 	x=mouse_x
 	x=clamp(x,obj_bar.x,obj_bar.x+obj_bar.w)
 		//segement counting

@@ -36,6 +36,7 @@ if visible && !instance_exists(obj_userinput)
 
 	case main[3]:
 //setting
+obj_music.mainroom = 0
 obj_carrier.visible = true
 	obj_music.setting = true
 	break;
@@ -70,6 +71,7 @@ obj_carrier.visible = true
 	break;
 	case pause[3]:
 //setting
+	obj_music.mainroom = 0
 	obj_music.setting = true
 	break;
 	case pause[4]:
@@ -123,10 +125,17 @@ obj_carrier.visible = true
 		} 
 
 	break;
+	case othername[2]:
+	obj_carrier.visible = false
+	obj_music.setting =false
+	obj_music.mainroom = 1
+	break;
 	case "Back to Menu":
 		global.room_from=room
 		room_goto(Room1);
 	break;
+	
+	
 	}
 
 }

@@ -33,7 +33,8 @@ function otherbuttons()
 	var list=
 	[
 	"Back",
-	"Free Save Slot"
+	"Free Save Slot",
+	"Exit Setting"
 	]
 	return list;
 }

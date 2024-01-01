@@ -53,6 +53,7 @@ if (draw){
 	else {
 		if numberloops > 0
 		{
+			obj_music.mainmenubut=[]
 			for (var i =0;i<numberloops;++i)
 			{
 		
@@ -72,6 +73,7 @@ if (draw){
 				obj.save= searchfiles()
 				obj.othername=otherbuttons()
 				obj.num = i
+				array_push(obj_music.mainmenubut,obj)
 			}
 			drawtext = false
 		}
