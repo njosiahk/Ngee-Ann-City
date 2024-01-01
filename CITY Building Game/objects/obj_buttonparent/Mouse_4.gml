@@ -36,6 +36,8 @@ if visible && !instance_exists(obj_userinput)
 
 	case main[3]:
 //setting
+obj_carrier.visible = true
+	obj_music.setting = true
 	break;
 	case main[4]:
 	game_end()
@@ -68,6 +70,7 @@ if visible && !instance_exists(obj_userinput)
 	break;
 	case pause[3]:
 //setting
+	obj_music.setting = true
 	break;
 	case pause[4]:
 	//end game and retrun to main menu also need to destroy load file if they use

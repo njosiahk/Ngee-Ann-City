@@ -1,10 +1,16 @@
-// Display the current volume on the screen
-// Draw red background
-draw_set_color(c_red);
-draw_rectangle(0, 0, 200, 60, false);
+/// @description Insert description here
+// You can write your code in this editor
 
-// Display the current volume on the screen
-draw_set_color(c_white);
-draw_text(10, 10, "Volume: " + string(volume));
+
+
+
+
+
+
+draw_text_ext(100,100,string(setting)+string(pausecreate)+string(pausedestroy),20,500)
+
+
+
+
 
 

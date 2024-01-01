@@ -14,6 +14,6 @@ if keyboard_check_pressed(vk_enter) && action == "name"
 {
 	global.username = keyboard_string
 	saveusername()
-	room_goto_next();
+	room_goto(test_spawn);
 	instance_destroy()
 }

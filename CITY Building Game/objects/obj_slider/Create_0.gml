@@ -1,8 +1,9 @@
 // initialize variables
-xx = 0;
-grab = false;
-can_click = true;
+multi = obj_bar.h / sprite_height
+y+= obj_bar.h/2
 
+segmentwidth = obj_bar.w/10
+number = 0
 
-
+x= obj_bar.x+round((1/10)*obj_music.volume)*obj_bar.w//percentage
 

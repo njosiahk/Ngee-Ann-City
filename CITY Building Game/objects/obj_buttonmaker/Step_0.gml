@@ -34,7 +34,7 @@ if (draw){
 	{
 		startY = ((startY*2)-linespace-logoheight)/2
 		var logo= instance_create_layer(logoXstart,startY,layername,obj_title)
-		
+		var carrier = instance_create_depth(x, y,layer_get_depth(layername)-100, obj_carrier);
 		startY +=logoheight+linespace
 	}
 

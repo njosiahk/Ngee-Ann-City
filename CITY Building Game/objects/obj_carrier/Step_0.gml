@@ -1,6 +1,4 @@
-//get camera width and height
-camW = camera_get_view_width(view_camera[0]);
-camH = camera_get_view_height(view_camera[0]);
+
 
 //center on player
 if instance_exists( obj_mover )
@@ -11,13 +9,45 @@ if instance_exists( obj_mover )
 if instance_exists(obj_pause)
 {
 	visible=true
+	if obj_music.pausecreate > obj_music.pausedestroy
+	{
+			for( var ins =0 ; ins<array_length(buttonarray);ins++)
+			{
+				instance_activate_object(buttonarray[ins])
+			}
+
+	}
 }
-else 
+
+else if !instance_exists(obj_pause)&& room !=Room1
 {
 	visible = false
 }
-
-
+if obj_music.pausecreate==obj_music.pausedestroy
+{
+	xbegin=x
+	xend = sprite_width
+	obj_music.setting =false
+	instance_deactivate_object(bar)
+	instance_deactivate_object(slider)
+}
+if obj_music.setting 
+{	
+	if instance_exists(obj_pause)
+	{
+		for( var ins =0 ; ins<array_length(buttonarray);ins++)
+		{
+			instance_deactivate_object(buttonarray[ins])
+		}
+	}
+	//setting the carrier
+	xbegin = camW/4
+	xend = camW/2
+	instance_activate_object(bar)
+	instance_activate_object(slider)
+	
+	// create the nameinput and edit button i guess
+}
 
 
 

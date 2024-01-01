@@ -14,7 +14,12 @@ var keyscalex = (sprite_width*0.10)/sprite_get_width(spr_movement)
 var wx = lsidebarx + sprite_width*0.45 - (sprite_get_width(spr_movement)/2)*keyscalex
 var wy = sidebary + sprite_height*0.2
 
-draw_self();
+
+//draw_self();
+draw_sprite_stretched(spr_carrier,image_index,xbegin,ybegin,xend,yend)
+// tutorial
+if !obj_music.setting && room!=Room1
+{
 draw_sprite_ext(spr_interface,0,lsidebarx,sidebary,sidebarxscale,sidebaryscale,0,c_white,1)
 draw_sprite_ext(spr_interface,0,rsidebarx,sidebary,sidebarxscale,sidebaryscale,0,c_white,1)
 
@@ -44,3 +49,4 @@ draw_set_halign(fa_center)
 draw_text_transformed(ltextx,wy + 205 + sprite_width*0.3,"/",3,3,0)
 draw_set_halign(fa_left)
 draw_sprite_ext(spr_pick,1,wx + sprite_width*0.1,wy + 225 + sprite_width*0.3,keyscalex,keyscalex,0,c_white,1)
+}

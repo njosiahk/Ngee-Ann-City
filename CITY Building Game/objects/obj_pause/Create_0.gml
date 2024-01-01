@@ -3,3 +3,4 @@
 /*instance_deactivate_layer("Game_layer")
 instance_activate_layer("Pause_layer")
 instance_deactivate_object(obj_turnbutton)*/
+obj_music.pausecreate+=1

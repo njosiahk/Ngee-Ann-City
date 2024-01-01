@@ -32,6 +32,10 @@ if !variable_global_exists("grid")
 {
 		global.grid =[]
 }
+if !variable_global_exists("silver_font")
+{
+	global.silver_font = font_add("Silver.ttf", 32, false, false, 32, 128);
+}
 if !variable_global_exists("username")
 {
 	try
@@ -43,6 +47,7 @@ if !variable_global_exists("username")
 		global.username=""
 	}
 }
+
 //show_debug_log(true)
 /////////////////////////////////////////////////
 logoheight = sprite_get_height(spr_title)

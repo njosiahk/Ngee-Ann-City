@@ -30,7 +30,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_slider",
+    "path": "sprites/spr_slider/spr_slider.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }
