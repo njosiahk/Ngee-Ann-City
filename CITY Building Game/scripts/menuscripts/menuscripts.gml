@@ -10,10 +10,12 @@ function linkleaderboard()
 function save_grid()
 {
 	global.data=[]
+
 	for (var i =0;i<array_length(global.grid);i++)
 	{
 		array_push(global.data,object_get_name(global.grid[i].object_index))
 	}
+
 }
 
 function save_game(_filename,_previous)//filename is string and gameobjs is an array
@@ -38,7 +40,8 @@ function save_game(_filename,_previous)//filename is string and gameobjs is an a
 	if _previous !=""
 	{
 		//delete file
-		file_delete(_previous)
+
+		file_delete(dir+_previous)
 	}
 	file_text_write_string(_file,_string); // save the _struct in the file in text format
 	file_text_close(_file);
@@ -59,7 +62,10 @@ function load_game(_filename)
 	global.gold= _struct.gold;
 	global.data= _struct.buildings;
 	global.username=_struct.username;
-		
+	global.grid=[]
+	
+	//global.grid = global.data
+	
 	file_text_close(_file);
 	
 }

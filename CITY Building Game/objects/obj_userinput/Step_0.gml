@@ -4,6 +4,7 @@
 if keyboard_check_pressed(vk_enter) && action == "save"
 {
 	name=keyboard_string
+	show_message(previousname)
 	save_game(name,previousname)
 	// end game or go to main menu
 	global.saveload=false

@@ -28,7 +28,8 @@ circlex2 = circlexx2
 circley=circleyy
 circley2 =circleyy2
 //know whene the turn ends
-if calculate {
+if calculate 
+{
 	//var buildinglist = [obj_comm,obj_road,obj_park,obj_ind,obj_res]
 	var scoreadd = 0
 	var gold =0
@@ -128,9 +129,8 @@ if calculate {
 	global.points += scoreadd
 	global.gold += gold
 	calculate = false; // to stop looping the function
+	//show_debug_message(self.object_index)
 }
-
-
 
 
 

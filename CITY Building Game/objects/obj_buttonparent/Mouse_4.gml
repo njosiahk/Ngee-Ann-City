@@ -52,11 +52,10 @@ obj_carrier.visible = true
 	case pause[1]:
 	
 	//save game
-	global.room_from=room
-
-	//room_instance_add(fileroom,0,0,obj_saveloader)
-	
+	global.room_from=room	
 	global.saveload = true
+	//obj_building.calculate=true
+	//global.turn+=1
 	save_grid()
 	room_goto(fileroom)
 

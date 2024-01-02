@@ -5,7 +5,17 @@ camH = camera_get_view_height(view_camera[0]);
 buttonname = Pausemenu();
 numberloops = array_length(buttonname);
 buttonarray=[]
-
+if instance_exists( obj_mover )
+{
+	x = (obj_mover.x-(sprite_width/2));
+	y = (obj_mover.y-(sprite_height/2));
+}
+else
+{
+	
+	x = (camW/2-(sprite_width/2));
+	y = (camH/2-(sprite_height/2)-100);
+}
 
 
 if room != Room1

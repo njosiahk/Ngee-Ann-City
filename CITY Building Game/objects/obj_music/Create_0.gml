@@ -7,7 +7,7 @@ mainroom =0
 
 
 
-volume = 0 // 0-10 
+volume = 5 // 0-10 
 //fade to 5
 
 setvol=volume/10

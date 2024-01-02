@@ -5,5 +5,5 @@ y+= obj_bar.h/2
 segmentwidth = obj_bar.w/10
 number = 0
 
-x= obj_bar.x+round((1/10)*obj_music.volume)*obj_bar.w//percentage
+x= obj_bar.x+(round(segmentwidth*obj_music.volume))//percentage
 

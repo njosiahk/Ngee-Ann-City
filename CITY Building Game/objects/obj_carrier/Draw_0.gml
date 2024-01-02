@@ -17,7 +17,7 @@ var wy = sidebary + sprite_height*0.2
 
 //draw_self();
 draw_sprite_stretched(spr_carrier,image_index,xbegin,ybegin,xend,yend)
-draw_text(x,y,string(x)+" "+string(y) )
+//draw_text(x,y,string(xbegin)+" "+string(ybegin) )
 // tutorial
 if !obj_music.setting && room!=Room1
 {

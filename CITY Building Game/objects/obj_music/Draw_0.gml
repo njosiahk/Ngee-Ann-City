@@ -7,7 +7,7 @@
 
 
 
-draw_text_ext(100,100,string(setting)+string(pausecreate)+string(pausedestroy),20,500)
+//draw_text_ext(100,100,string(setting)+string(pausecreate)+string(pausedestroy),20,500)
 
 
 

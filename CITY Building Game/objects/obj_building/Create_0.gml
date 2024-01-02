@@ -13,3 +13,5 @@ circlexx2 = x+obj_game.cell_size+1
 circleyy=y-1
 circleyy2 = y+obj_game.cell_size+1
 
+savecal =false
+//show_debug_log(true)
