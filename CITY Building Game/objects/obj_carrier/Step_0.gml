@@ -5,13 +5,19 @@ if instance_exists( obj_mover )
 {
 	x = (obj_mover.x-(sprite_width/2));
 	y = (obj_mover.y-(sprite_height/2));
+	if obj_music.setting
+	{
+		x = (obj_mover.x-(xend/2));
+		y = (obj_mover.y-((yend+50)/2));
+	}
 }
 else
 {
 	
-	x = (camW/2-(sprite_width/2));
-	y = (camH/2-(sprite_height/2)-100);
+	x = (camW/2-(xend/2));
+	y = (camH/2-((yend+50)/2));
 }
+
 if instance_exists(obj_pause)
 {
 	visible=true
@@ -31,7 +37,6 @@ else if !instance_exists(obj_pause)&& room !=Room1
 }
 if obj_music.pausecreate==obj_music.pausedestroy && obj_music.pausecreate!=0|| obj_music.mainroom == 1
 {
-	xbegin=x
 	xend = sprite_width
 	obj_music.setting =false
 	instance_deactivate_object(bar)
@@ -65,7 +70,8 @@ if obj_music.setting
 	// create the nameinput and edit button i guess
 }
 
-
+ybegin=y
+xbegin=x
 
 
 

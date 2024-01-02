@@ -34,3 +34,12 @@ for (var i = 0; i < array_length(pausearray); i++) {
 	}
 
 }
+
+if choice == othername[2]
+{
+	if instance_exists(obj_mover)
+	{
+	x=obj_mover.x-sprite_get_width(spr_button)/2
+	y=obj_mover.y+(obj_carrier.camH/4)
+	}
+}

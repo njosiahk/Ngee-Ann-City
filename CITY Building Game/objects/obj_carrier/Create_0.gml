@@ -43,6 +43,7 @@ for (var i =0;i<numberloops;++i)
 visible = false
 xbegin=x
 ybegin=y
+
 xend = sprite_width
 yend = sprite_height+100
 
