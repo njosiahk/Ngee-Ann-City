@@ -50,6 +50,7 @@
     {"name":"spr_park","order":10,"path":"sprites/spr_park/spr_park.yy",},
     {"name":"obj_mover","order":1,"path":"objects/obj_mover/obj_mover.yy",},
     {"name":"sprLLGuidePages","order":1,"path":"sprites/sprLLGuidePages/sprLLGuidePages.yy",},
+    {"name":"snd_build","order":52,"path":"sounds/snd_build/snd_build.yy",},
     {"name":"objLLTopHighscores","order":6,"path":"objects/objLLTopHighscores/objLLTopHighscores.yy",},
     {"name":"fontLLFontHighscore","order":1,"path":"fonts/fontLLFontHighscore/fontLLFontHighscore.yy",},
     {"name":"objLLSubmitScore","order":5,"path":"objects/objLLSubmitScore/objLLSubmitScore.yy",},

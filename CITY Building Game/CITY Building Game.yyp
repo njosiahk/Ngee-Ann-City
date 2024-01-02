@@ -72,6 +72,7 @@
     {"id":{"name":"obj_mover","path":"objects/obj_mover/obj_mover.yy",},},
     {"id":{"name":"sprLLGuidePages","path":"sprites/sprLLGuidePages/sprLLGuidePages.yy",},},
     {"id":{"name":"spr_res","path":"sprites/spr_res/spr_res.yy",},},
+    {"id":{"name":"snd_build","path":"sounds/snd_build/snd_build.yy",},},
     {"id":{"name":"objLLTopHighscores","path":"objects/objLLTopHighscores/objLLTopHighscores.yy",},},
     {"id":{"name":"fontLLFontHighscore","path":"fonts/fontLLFontHighscore/fontLLFontHighscore.yy",},},
     {"id":{"name":"objLLSubmitScore","path":"objects/objLLSubmitScore/objLLSubmitScore.yy",},},

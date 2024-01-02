@@ -15,5 +15,5 @@ setvol=volume/10
 mainmenubut=[]
 //play bgm on loop
 //audio_play_sound(snd_BGM, 0, true,volume);
-audio_play_sound(snd_BGM, 1, true,setvol)
-audio_sound_gain(snd_BGM, 5/10, 10000);
+audio_play_sound(snd_BGM, 1, true);
+audio_sound_gain(snd_BGM, setvol, 0);
