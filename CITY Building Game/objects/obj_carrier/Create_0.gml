@@ -59,7 +59,7 @@ slider = instance_create_depth(sliderx,bary,(layer_get_depth("Pause_layer")-225)
 returnbut = instance_create_depth(camW/2-sprite_get_width(spr_button)/2,camH/4*3,(layer_get_depth("Pause_layer")-200),obj_buttonparent)
 //y += obj_buttonmaker.linespace //WARNING (MIGHT BREAK WHEN CLAMPED)
 
-returnbut.item ="Exit Setting"
+returnbut.item ="Exit Settings"
 
 returnbut.pause=Pausemenu()
 returnbut.main = Mainmenu()
