@@ -6,7 +6,7 @@ if instance_exists(obj_mover)
 }
 else
 {
-	y=camera_get_view_height(view_camera[0])/2 +obj_bar.h/2
+	y=camera_get_view_height(view_camera[0])/2
 
 }
 

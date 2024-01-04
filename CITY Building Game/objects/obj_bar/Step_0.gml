@@ -3,10 +3,10 @@
 if instance_exists(obj_mover)
 {
 	//y=obj_mover.y-sprite_height/2-obj_carrier.yend/2+50
-	y=obj_mover.y
+	y=obj_mover.y-h/2
 	x=obj_mover.x-sprite_width/2
 }
 else 
 {
-	y=obj_carrier.camH/2
+	y=obj_carrier.camH/2-h/2
 }
