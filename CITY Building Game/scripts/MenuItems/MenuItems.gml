@@ -34,7 +34,7 @@ function otherbuttons()
 	[
 	"Back",
 	"Free Save Slot",
-	"Exit Setting"
+	"Exit Settings"
 	]
 	return list;
 }

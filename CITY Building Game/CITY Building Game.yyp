@@ -44,7 +44,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.11.1.129",
+    "IDEVersion": "2023.8.2.108",
   },
   "resources": [
     {"id":{"name":"obj_submitscore","path":"objects/obj_submitscore/obj_submitscore.yy",},},
@@ -70,11 +70,9 @@
     {"id":{"name":"obj_bar","path":"objects/obj_bar/obj_bar.yy",},},
     {"id":{"name":"spr_movement","path":"sprites/spr_movement/spr_movement.yy",},},
     {"id":{"name":"obj_game","path":"objects/obj_game/obj_game.yy",},},
-    {"id":{"name":"sRoadVertical","path":"sprites/sRoadVertical/sRoadVertical.yy",},},
     {"id":{"name":"spr_test_bg","path":"sprites/spr_test_bg/spr_test_bg.yy",},},
     {"id":{"name":"LootLockerLeaderboards","path":"extensions/LootLockerLeaderboards/LootLockerLeaderboards.yy",},},
     {"id":{"name":"menuscripts","path":"scripts/menuscripts/menuscripts.yy",},},
-    {"id":{"name":"sRoadCorner","path":"sprites/sRoadCorner/sRoadCorner.yy",},},
     {"id":{"name":"obj_building","path":"objects/obj_building/obj_building.yy",},},
     {"id":{"name":"spr_ind","path":"sprites/spr_ind/spr_ind.yy",},},
     {"id":{"name":"obj_turnbutton","path":"objects/obj_turnbutton/obj_turnbutton.yy",},},
@@ -108,7 +106,6 @@
     {"id":{"name":"spr_pickA","path":"sprites/spr_pickA/spr_pickA.yy",},},
     {"id":{"name":"snd_BGM","path":"sounds/snd_BGM/snd_BGM.yy",},},
     {"id":{"name":"spr_menubkgrd","path":"sprites/spr_menubkgrd/spr_menubkgrd.yy",},},
-    {"id":{"name":"sRoadHorizontal","path":"sprites/sRoadHorizontal/sRoadHorizontal.yy",},},
     {"id":{"name":"roomLootLockerLeaderboardsGuide","path":"rooms/roomLootLockerLeaderboardsGuide/roomLootLockerLeaderboardsGuide.yy",},},
     {"id":{"name":"spr_comm","path":"sprites/spr_comm/spr_comm.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
