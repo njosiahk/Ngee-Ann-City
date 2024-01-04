@@ -24,6 +24,7 @@ draw_self()
 
 
 */
+draw_self()
 draw_sprite_ext(spr_slider,image_index,x,y,multi,multi,0,c_white,1)
 draw_set_halign(fa_center)
 
