@@ -68,7 +68,6 @@
     {"name":"obj_interface","order":3,"path":"objects/obj_interface/obj_interface.yy",},
     {"name":"MenuItems","order":2,"path":"scripts/MenuItems/MenuItems.yy",},
     {"name":"spr_button","order":5,"path":"sprites/spr_button/spr_button.yy",},
-    {"name":"sRoadIntersection","order":3,"path":"sprites/sRoadIntersection/sRoadIntersection.yy",},
     {"name":"spr_mover","order":8,"path":"sprites/spr_mover/spr_mover.yy",},
     {"name":"obj_title","order":4,"path":"objects/obj_title/obj_title.yy",},
     {"name":"obj_ind","order":3,"path":"objects/obj_ind/obj_ind.yy",},

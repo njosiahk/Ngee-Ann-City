@@ -94,7 +94,6 @@
     {"id":{"name":"obj_interface","path":"objects/obj_interface/obj_interface.yy",},},
     {"id":{"name":"MenuItems","path":"scripts/MenuItems/MenuItems.yy",},},
     {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},},
-    {"id":{"name":"sRoadIntersection","path":"sprites/sRoadIntersection/sRoadIntersection.yy",},},
     {"id":{"name":"spr_mover","path":"sprites/spr_mover/spr_mover.yy",},},
     {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},},
     {"id":{"name":"obj_ind","path":"objects/obj_ind/obj_ind.yy",},},

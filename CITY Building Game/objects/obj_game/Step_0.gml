@@ -31,6 +31,7 @@ else if (setup)
 			if object != obj_cell
 			{
 				global.gold +=1 // to overconpensate buildcost when loading a saved game
+				
 			}
 			array_push(global.grid,_instance)
 			//more code for cell if needed
@@ -39,10 +40,15 @@ else if (setup)
 setup = false
 load = false
 }
-
+	show_debug_log(true)
+	show_debug_message("game end")
+		show_debug_message( cells_built)
+				show_debug_message( total_cells)
 //end game code
 if cells_built >= total_cells || global.gold <= 0 { //end the game
-	
+
+
+
 	//go to final score tabulation or whatever
 	//go back to main menu
 	global.room_from=room
