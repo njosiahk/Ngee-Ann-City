@@ -40,7 +40,7 @@ else if (setup)
 setup = false
 load = false
 }
-	show_debug_log(true)
+	//show_debug_log(true)
 	show_debug_message("game end")
 		show_debug_message( cells_built)
 				show_debug_message( total_cells)
