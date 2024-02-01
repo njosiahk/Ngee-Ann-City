@@ -76,6 +76,8 @@ obj_carrier.visible = true
 	case pause[4]:
 	//end game and retrun to main menu also need to destroy load file if they use
 	global.room_from=room
+	global.data = noone;
+	global.loadditem = false
 	instance_create_layer(0,0,"Game_layer",obj_submitscore)
 	room_goto(LeaderBoard)//go to leaderboard room
 	break;

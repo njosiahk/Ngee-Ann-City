@@ -14,6 +14,9 @@ if !variable_global_exists("loadditem")
 	global.loadditem = false
 }
 load= global.loadditem
+show_debug_message(global.loadditem)
+show_debug_message("the load line")
+show_debug_message(load)
 global.grid=[]
 //building options
 build_array = [obj_res, obj_ind, obj_comm, obj_park, obj_road]; 
